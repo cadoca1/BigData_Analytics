@@ -1,0 +1,140 @@
+ INFO [2020-10-02 18:31:15,312] ({main} RemoteInterpreterServer.java[main]:261) - URL:jar:file:/zeppelin/interpreter/sh/zeppelin-interpreter-0.8.1.jar!/org/apache/zeppelin/interpreter/remote/RemoteInterpreterServer.class
+ INFO [2020-10-02 18:31:15,708] ({main} RemoteInterpreterServer.java[<init>]:162) - Launching ThriftServer at 172.17.0.2:36487
+ INFO [2020-10-02 18:31:15,799] ({main} RemoteInterpreterServer.java[<init>]:166) - Starting remote interpreter server on port 36487
+ INFO [2020-10-02 18:31:15,811] ({Thread-0} RemoteInterpreterServer.java[run]:203) - Starting remote interpreter server on port 36487
+ INFO [2020-10-02 18:31:15,873] ({Thread-1} RemoteInterpreterUtils.java[registerInterpreter]:165) - callbackHost: 172.17.0.2, callbackPort: 43253, callbackInfo: CallbackInfo(host:172.17.0.2, port:36487)
+ INFO [2020-10-02 18:31:16,650] ({pool-1-thread-1} RemoteInterpreterServer.java[createInterpreter]:311) - Instantiate interpreter org.apache.zeppelin.shell.ShellInterpreter
+ WARN [2020-10-02 18:31:16,936] ({pool-1-thread-3} ZeppelinConfiguration.java[create]:117) - Failed to load configuration, proceeding with a default
+ INFO [2020-10-02 18:31:17,126] ({pool-1-thread-3} ZeppelinConfiguration.java[create]:129) - Server Host: 0.0.0.0
+ INFO [2020-10-02 18:31:17,135] ({pool-1-thread-3} ZeppelinConfiguration.java[create]:131) - Server Port: 8080
+ INFO [2020-10-02 18:31:17,143] ({pool-1-thread-3} ZeppelinConfiguration.java[create]:135) - Context Path: /
+ INFO [2020-10-02 18:31:17,179] ({pool-1-thread-3} ZeppelinConfiguration.java[create]:136) - Zeppelin Version: 0.8.1
+ INFO [2020-10-02 18:31:17,185] ({pool-1-thread-3} SchedulerFactory.java[<init>]:59) - Scheduler Thread Pool Size: 100
+ INFO [2020-10-02 18:31:17,239] ({pool-2-thread-2} SchedulerFactory.java[jobStarted]:114) - Job 20200212-212102_1279039025 started by scheduler org.apache.zeppelin.shell.ShellInterpreter1624484166
+ INFO [2020-10-02 18:31:17,311] ({pool-2-thread-2} ShellInterpreter.java[open]:66) - Command timeout property: 60000
+ INFO [2020-10-02 18:31:18,232] ({pool-2-thread-2} ShellInterpreter.java[interpret]:115) - Paragraph 20200212-212102_1279039025 return with exit value: 0
+ INFO [2020-10-02 18:31:18,254] ({pool-2-thread-2} SchedulerFactory.java[jobFinished]:120) - Job 20200212-212102_1279039025 finished by scheduler org.apache.zeppelin.shell.ShellInterpreter1624484166
+ INFO [2020-10-02 18:31:19,034] ({pool-2-thread-2} SchedulerFactory.java[jobStarted]:114) - Job 20200212-212325_1375517377 started by scheduler org.apache.zeppelin.shell.ShellInterpreter1624484166
+ERROR [2020-10-02 18:31:19,267] ({pool-2-thread-2} ShellInterpreter.java[interpret]:120) - Can not run echo "################"
+echo "File Permission:"
+echo "################"
+ls -ltra data
+
+echo "################"
+echo "File Details:"
+echo "################"
+
+wc -l data/fifa_players.csv
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:153)
+	at org.apache.zeppelin.shell.ShellInterpreter.interpret(ShellInterpreter.java:114)
+	at org.apache.zeppelin.interpreter.LazyOpenInterpreter.interpret(LazyOpenInterpreter.java:103)
+	at org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:632)
+	at org.apache.zeppelin.scheduler.Job.run(Job.java:188)
+	at org.apache.zeppelin.scheduler.ParallelScheduler$JobRunner.run(ParallelScheduler.java:162)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+ INFO [2020-10-02 18:31:19,387] ({pool-2-thread-2} SchedulerFactory.java[jobFinished]:120) - Job 20200212-212325_1375517377 finished by scheduler org.apache.zeppelin.shell.ShellInterpreter1624484166
+ INFO [2020-10-02 18:34:42,383] ({pool-2-thread-3} SchedulerFactory.java[jobStarted]:114) - Job 20200212-212102_1279039025 started by scheduler org.apache.zeppelin.shell.ShellInterpreter1624484166
+ INFO [2020-10-02 18:34:42,624] ({pool-2-thread-3} ShellInterpreter.java[interpret]:115) - Paragraph 20200212-212102_1279039025 return with exit value: 0
+ INFO [2020-10-02 18:34:42,634] ({pool-2-thread-3} SchedulerFactory.java[jobFinished]:120) - Job 20200212-212102_1279039025 finished by scheduler org.apache.zeppelin.shell.ShellInterpreter1624484166
+ INFO [2020-10-02 18:34:43,084] ({pool-2-thread-2} SchedulerFactory.java[jobStarted]:114) - Job 20200212-212325_1375517377 started by scheduler org.apache.zeppelin.shell.ShellInterpreter1624484166
+ERROR [2020-10-02 18:34:43,191] ({pool-2-thread-2} ShellInterpreter.java[interpret]:120) - Can not run echo "################"
+echo "File Permission:"
+echo "################"
+ls -ltra data
+
+echo "################"
+echo "File Details:"
+echo "################"
+
+wc -l data/fifa_players.csv
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:153)
+	at org.apache.zeppelin.shell.ShellInterpreter.interpret(ShellInterpreter.java:114)
+	at org.apache.zeppelin.interpreter.LazyOpenInterpreter.interpret(LazyOpenInterpreter.java:103)
+	at org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:632)
+	at org.apache.zeppelin.scheduler.Job.run(Job.java:188)
+	at org.apache.zeppelin.scheduler.ParallelScheduler$JobRunner.run(ParallelScheduler.java:162)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+ INFO [2020-10-02 18:34:43,202] ({pool-2-thread-2} SchedulerFactory.java[jobFinished]:120) - Job 20200212-212325_1375517377 finished by scheduler org.apache.zeppelin.shell.ShellInterpreter1624484166
+ INFO [2020-10-02 18:35:32,323] ({pool-2-thread-4} SchedulerFactory.java[jobStarted]:114) - Job 20200212-212102_1279039025 started by scheduler org.apache.zeppelin.shell.ShellInterpreter1624484166
+ INFO [2020-10-02 18:35:32,491] ({pool-2-thread-4} ShellInterpreter.java[interpret]:115) - Paragraph 20200212-212102_1279039025 return with exit value: 0
+ INFO [2020-10-02 18:35:32,493] ({pool-2-thread-4} SchedulerFactory.java[jobFinished]:120) - Job 20200212-212102_1279039025 finished by scheduler org.apache.zeppelin.shell.ShellInterpreter1624484166
+ INFO [2020-10-02 18:35:32,766] ({pool-2-thread-3} SchedulerFactory.java[jobStarted]:114) - Job 20200212-212325_1375517377 started by scheduler org.apache.zeppelin.shell.ShellInterpreter1624484166
+ERROR [2020-10-02 18:35:32,872] ({pool-2-thread-3} ShellInterpreter.java[interpret]:120) - Can not run echo "################"
+echo "File Permission:"
+echo "################"
+ls -ltra data
+
+echo "################"
+echo "File Details:"
+echo "################"
+
+wc -l data/fifa_players.csv
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:153)
+	at org.apache.zeppelin.shell.ShellInterpreter.interpret(ShellInterpreter.java:114)
+	at org.apache.zeppelin.interpreter.LazyOpenInterpreter.interpret(LazyOpenInterpreter.java:103)
+	at org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:632)
+	at org.apache.zeppelin.scheduler.Job.run(Job.java:188)
+	at org.apache.zeppelin.scheduler.ParallelScheduler$JobRunner.run(ParallelScheduler.java:162)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+ INFO [2020-10-02 18:35:32,880] ({pool-2-thread-3} SchedulerFactory.java[jobFinished]:120) - Job 20200212-212325_1375517377 finished by scheduler org.apache.zeppelin.shell.ShellInterpreter1624484166
+ INFO [2020-10-02 18:50:43,281] ({pool-2-thread-5} SchedulerFactory.java[jobStarted]:114) - Job 20200212-212102_1279039025 started by scheduler org.apache.zeppelin.shell.ShellInterpreter1624484166
+ INFO [2020-10-02 18:50:43,397] ({pool-2-thread-5} ShellInterpreter.java[interpret]:115) - Paragraph 20200212-212102_1279039025 return with exit value: 0
+ INFO [2020-10-02 18:50:43,402] ({pool-2-thread-5} SchedulerFactory.java[jobFinished]:120) - Job 20200212-212102_1279039025 finished by scheduler org.apache.zeppelin.shell.ShellInterpreter1624484166
+ INFO [2020-10-02 18:51:12,316] ({pool-2-thread-2} SchedulerFactory.java[jobStarted]:114) - Job 20200212-212102_1279039025 started by scheduler org.apache.zeppelin.shell.ShellInterpreter1624484166
+ INFO [2020-10-02 18:51:12,389] ({pool-2-thread-2} ShellInterpreter.java[interpret]:115) - Paragraph 20200212-212102_1279039025 return with exit value: 0
+ INFO [2020-10-02 18:51:12,393] ({pool-2-thread-2} SchedulerFactory.java[jobFinished]:120) - Job 20200212-212102_1279039025 finished by scheduler org.apache.zeppelin.shell.ShellInterpreter1624484166
+ INFO [2020-10-02 18:51:12,805] ({pool-2-thread-6} SchedulerFactory.java[jobStarted]:114) - Job 20200212-212325_1375517377 started by scheduler org.apache.zeppelin.shell.ShellInterpreter1624484166
+ERROR [2020-10-02 18:51:13,029] ({pool-2-thread-6} ShellInterpreter.java[interpret]:120) - Can not run echo "################"
+echo "File Permission:"
+echo "################"
+ls -ltra data
+
+echo "################"
+echo "File Details:"
+echo "################"
+
+wc -l data/fifa_players.csv
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:153)
+	at org.apache.zeppelin.shell.ShellInterpreter.interpret(ShellInterpreter.java:114)
+	at org.apache.zeppelin.interpreter.LazyOpenInterpreter.interpret(LazyOpenInterpreter.java:103)
+	at org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:632)
+	at org.apache.zeppelin.scheduler.Job.run(Job.java:188)
+	at org.apache.zeppelin.scheduler.ParallelScheduler$JobRunner.run(ParallelScheduler.java:162)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+ INFO [2020-10-02 18:51:13,040] ({pool-2-thread-6} SchedulerFactory.java[jobFinished]:120) - Job 20200212-212325_1375517377 finished by scheduler org.apache.zeppelin.shell.ShellInterpreter1624484166

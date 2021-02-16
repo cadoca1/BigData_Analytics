@@ -1,0 +1,591 @@
+ INFO [2020-10-02 18:09:48,471] ({main} RemoteInterpreterServer.java[main]:261) - URL:jar:file:/zeppelin/interpreter/spark/spark-interpreter-0.8.1.jar!/org/apache/zeppelin/interpreter/remote/RemoteInterpreterServer.class
+ INFO [2020-10-02 18:09:48,809] ({main} RemoteInterpreterServer.java[<init>]:162) - Launching ThriftServer at 172.17.0.2:33187
+ INFO [2020-10-02 18:09:48,919] ({main} RemoteInterpreterServer.java[<init>]:166) - Starting remote interpreter server on port 33187
+ INFO [2020-10-02 18:09:48,932] ({Thread-0} RemoteInterpreterServer.java[run]:203) - Starting remote interpreter server on port 33187
+ INFO [2020-10-02 18:09:49,994] ({Thread-1} RemoteInterpreterUtils.java[registerInterpreter]:165) - callbackHost: 172.17.0.2, callbackPort: 38927, callbackInfo: CallbackInfo(host:172.17.0.2, port:33187)
+ INFO [2020-10-02 18:09:51,567] ({pool-1-thread-1} RemoteInterpreterServer.java[createInterpreter]:311) - Instantiate interpreter org.apache.zeppelin.spark.SparkInterpreter
+ INFO [2020-10-02 18:09:51,602] ({pool-1-thread-1} RemoteInterpreterServer.java[createInterpreter]:311) - Instantiate interpreter org.apache.zeppelin.spark.SparkSqlInterpreter
+ INFO [2020-10-02 18:09:51,690] ({pool-1-thread-1} RemoteInterpreterServer.java[createInterpreter]:311) - Instantiate interpreter org.apache.zeppelin.spark.DepInterpreter
+ INFO [2020-10-02 18:09:51,836] ({pool-1-thread-1} RemoteInterpreterServer.java[createInterpreter]:311) - Instantiate interpreter org.apache.zeppelin.spark.PySparkInterpreter
+ INFO [2020-10-02 18:09:51,864] ({pool-1-thread-1} RemoteInterpreterServer.java[createInterpreter]:311) - Instantiate interpreter org.apache.zeppelin.spark.IPySparkInterpreter
+ INFO [2020-10-02 18:09:51,883] ({pool-1-thread-1} RemoteInterpreterServer.java[createInterpreter]:311) - Instantiate interpreter org.apache.zeppelin.spark.SparkRInterpreter
+ WARN [2020-10-02 18:09:52,080] ({pool-1-thread-3} ZeppelinConfiguration.java[create]:117) - Failed to load configuration, proceeding with a default
+ INFO [2020-10-02 18:09:52,173] ({pool-1-thread-3} ZeppelinConfiguration.java[create]:129) - Server Host: 0.0.0.0
+ INFO [2020-10-02 18:09:52,175] ({pool-1-thread-3} ZeppelinConfiguration.java[create]:131) - Server Port: 8080
+ INFO [2020-10-02 18:09:52,179] ({pool-1-thread-3} ZeppelinConfiguration.java[create]:135) - Context Path: /
+ INFO [2020-10-02 18:09:52,194] ({pool-1-thread-3} ZeppelinConfiguration.java[create]:136) - Zeppelin Version: 0.8.1
+ INFO [2020-10-02 18:09:52,200] ({pool-1-thread-3} SchedulerFactory.java[<init>]:59) - Scheduler Thread Pool Size: 100
+ INFO [2020-10-02 18:09:52,351] ({pool-2-thread-5} SchedulerFactory.java[jobStarted]:114) - Job 20201002-180628_605462956 started by scheduler interpreter_211172211
+ INFO [2020-10-02 18:09:52,644] ({pool-2-thread-5} NewSparkInterpreter.java[open]:83) - Using Scala Version: 2.11
+ INFO [2020-10-02 18:10:00,980] ({pool-1-thread-3} RemoteInterpreterServer.java[cancel]:681) - cancel org.apache.zeppelin.spark.SparkInterpreter 20201002-180628_605462956
+ INFO [2020-10-02 18:10:15,146] ({pool-2-thread-5} Logging.scala[logInfo]:54) - Running Spark version 2.2.1
+ WARN [2020-10-02 18:10:16,285] ({pool-2-thread-5} NativeCodeLoader.java[<clinit>]:62) - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+ INFO [2020-10-02 18:10:16,744] ({pool-2-thread-5} Logging.scala[logInfo]:54) - Submitted application: Zeppelin
+ INFO [2020-10-02 18:10:16,818] ({pool-2-thread-5} Logging.scala[logInfo]:54) - Changing view acls to: root
+ INFO [2020-10-02 18:10:16,822] ({pool-2-thread-5} Logging.scala[logInfo]:54) - Changing modify acls to: root
+ INFO [2020-10-02 18:10:16,829] ({pool-2-thread-5} Logging.scala[logInfo]:54) - Changing view acls groups to: 
+ INFO [2020-10-02 18:10:16,835] ({pool-2-thread-5} Logging.scala[logInfo]:54) - Changing modify acls groups to: 
+ INFO [2020-10-02 18:10:16,838] ({pool-2-thread-5} Logging.scala[logInfo]:54) - SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(root); groups with view permissions: Set(); users  with modify permissions: Set(root); groups with modify permissions: Set()
+ INFO [2020-10-02 18:10:18,110] ({pool-2-thread-5} Logging.scala[logInfo]:54) - Successfully started service 'sparkDriver' on port 36811.
+ INFO [2020-10-02 18:10:18,197] ({pool-2-thread-5} Logging.scala[logInfo]:54) - Registering MapOutputTracker
+ INFO [2020-10-02 18:10:18,289] ({pool-2-thread-5} Logging.scala[logInfo]:54) - Registering BlockManagerMaster
+ INFO [2020-10-02 18:10:18,304] ({pool-2-thread-5} Logging.scala[logInfo]:54) - Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+ INFO [2020-10-02 18:10:18,308] ({pool-2-thread-5} Logging.scala[logInfo]:54) - BlockManagerMasterEndpoint up
+ INFO [2020-10-02 18:10:18,353] ({pool-2-thread-5} Logging.scala[logInfo]:54) - Created local directory at /tmp/blockmgr-51300b50-8871-4be1-a01f-1cc04d30fe8c
+ INFO [2020-10-02 18:10:18,428] ({pool-2-thread-5} Logging.scala[logInfo]:54) - MemoryStore started with capacity 408.9 MB
+ INFO [2020-10-02 18:10:18,578] ({pool-2-thread-5} Logging.scala[logInfo]:54) - Registering OutputCommitCoordinator
+ INFO [2020-10-02 18:10:19,045] ({pool-2-thread-5} Log.java[initialized]:192) - Logging initialized @31972ms
+ INFO [2020-10-02 18:10:19,319] ({pool-2-thread-5} Server.java[doStart]:345) - jetty-9.3.z-SNAPSHOT
+ INFO [2020-10-02 18:10:19,370] ({pool-2-thread-5} Server.java[doStart]:403) - Started @32296ms
+ INFO [2020-10-02 18:10:19,452] ({pool-2-thread-5} AbstractConnector.java[doStart]:270) - Started ServerConnector@4c782881{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+ INFO [2020-10-02 18:10:19,454] ({pool-2-thread-5} Logging.scala[logInfo]:54) - Successfully started service 'SparkUI' on port 4040.
+ INFO [2020-10-02 18:10:19,550] ({pool-2-thread-5} ContextHandler.java[doStart]:781) - Started o.s.j.s.ServletContextHandler@2f5e905{/jobs,null,AVAILABLE,@Spark}
+ INFO [2020-10-02 18:10:19,557] ({pool-2-thread-5} ContextHandler.java[doStart]:781) - Started o.s.j.s.ServletContextHandler@5d0bdb03{/jobs/json,null,AVAILABLE,@Spark}
+ INFO [2020-10-02 18:10:19,562] ({pool-2-thread-5} ContextHandler.java[doStart]:781) - Started o.s.j.s.ServletContextHandler@34373df{/jobs/job,null,AVAILABLE,@Spark}
+ INFO [2020-10-02 18:10:19,573] ({pool-2-thread-5} ContextHandler.java[doStart]:781) - Started o.s.j.s.ServletContextHandler@1b93a094{/jobs/job/json,null,AVAILABLE,@Spark}
+ INFO [2020-10-02 18:10:19,577] ({pool-2-thread-5} ContextHandler.java[doStart]:781) - Started o.s.j.s.ServletContextHandler@4a1370ce{/stages,null,AVAILABLE,@Spark}
+ INFO [2020-10-02 18:10:19,581] ({pool-2-thread-5} ContextHandler.java[doStart]:781) - Started o.s.j.s.ServletContextHandler@6fcde0e{/stages/json,null,AVAILABLE,@Spark}
+ INFO [2020-10-02 18:10:19,585] ({pool-2-thread-5} ContextHandler.java[doStart]:781) - Started o.s.j.s.ServletContextHandler@63f7438e{/stages/stage,null,AVAILABLE,@Spark}
+ INFO [2020-10-02 18:10:19,592] ({pool-2-thread-5} ContextHandler.java[doStart]:781) - Started o.s.j.s.ServletContextHandler@1c7da259{/stages/stage/json,null,AVAILABLE,@Spark}
+ INFO [2020-10-02 18:10:19,596] ({pool-2-thread-5} ContextHandler.java[doStart]:781) - Started o.s.j.s.ServletContextHandler@1988d470{/stages/pool,null,AVAILABLE,@Spark}
+ INFO [2020-10-02 18:10:19,602] ({pool-2-thread-5} ContextHandler.java[doStart]:781) - Started o.s.j.s.ServletContextHandler@56f59158{/stages/pool/json,null,AVAILABLE,@Spark}
+ INFO [2020-10-02 18:10:19,605] ({pool-2-thread-5} ContextHandler.java[doStart]:781) - Started o.s.j.s.ServletContextHandler@7a51f5cf{/storage,null,AVAILABLE,@Spark}
+ INFO [2020-10-02 18:10:19,609] ({pool-2-thread-5} ContextHandler.java[doStart]:781) - Started o.s.j.s.ServletContextHandler@7b401b02{/storage/json,null,AVAILABLE,@Spark}
+ INFO [2020-10-02 18:10:19,619] ({pool-2-thread-5} ContextHandler.java[doStart]:781) - Started o.s.j.s.ServletContextHandler@79449c2{/storage/rdd,null,AVAILABLE,@Spark}
+ INFO [2020-10-02 18:10:19,625] ({pool-2-thread-5} ContextHandler.java[doStart]:781) - Started o.s.j.s.ServletContextHandler@54b31edd{/storage/rdd/json,null,AVAILABLE,@Spark}
+ INFO [2020-10-02 18:10:19,628] ({pool-2-thread-5} ContextHandler.java[doStart]:781) - Started o.s.j.s.ServletContextHandler@727f90de{/environment,null,AVAILABLE,@Spark}
+ INFO [2020-10-02 18:10:19,633] ({pool-2-thread-5} ContextHandler.java[doStart]:781) - Started o.s.j.s.ServletContextHandler@15ccdfd4{/environment/json,null,AVAILABLE,@Spark}
+ INFO [2020-10-02 18:10:19,639] ({pool-2-thread-5} ContextHandler.java[doStart]:781) - Started o.s.j.s.ServletContextHandler@4c21309d{/executors,null,AVAILABLE,@Spark}
+ INFO [2020-10-02 18:10:19,651] ({pool-2-thread-5} ContextHandler.java[doStart]:781) - Started o.s.j.s.ServletContextHandler@4d6957ef{/executors/json,null,AVAILABLE,@Spark}
+ INFO [2020-10-02 18:10:19,663] ({pool-2-thread-5} ContextHandler.java[doStart]:781) - Started o.s.j.s.ServletContextHandler@7fa3805f{/executors/threadDump,null,AVAILABLE,@Spark}
+ INFO [2020-10-02 18:10:19,672] ({pool-2-thread-5} ContextHandler.java[doStart]:781) - Started o.s.j.s.ServletContextHandler@648274c{/executors/threadDump/json,null,AVAILABLE,@Spark}
+ INFO [2020-10-02 18:10:19,707] ({pool-2-thread-5} ContextHandler.java[doStart]:781) - Started o.s.j.s.ServletContextHandler@40be81f5{/static,null,AVAILABLE,@Spark}
+ INFO [2020-10-02 18:10:19,718] ({pool-2-thread-5} ContextHandler.java[doStart]:781) - Started o.s.j.s.ServletContextHandler@79433b73{/,null,AVAILABLE,@Spark}
+ INFO [2020-10-02 18:10:19,724] ({pool-2-thread-5} ContextHandler.java[doStart]:781) - Started o.s.j.s.ServletContextHandler@74663e11{/api,null,AVAILABLE,@Spark}
+ INFO [2020-10-02 18:10:19,729] ({pool-2-thread-5} ContextHandler.java[doStart]:781) - Started o.s.j.s.ServletContextHandler@1eb338bc{/jobs/job/kill,null,AVAILABLE,@Spark}
+ INFO [2020-10-02 18:10:19,731] ({pool-2-thread-5} ContextHandler.java[doStart]:781) - Started o.s.j.s.ServletContextHandler@4243cfc5{/stages/stage/kill,null,AVAILABLE,@Spark}
+ INFO [2020-10-02 18:10:19,741] ({pool-2-thread-5} Logging.scala[logInfo]:54) - Bound SparkUI to 0.0.0.0, and started at http://172.17.0.2:4040
+ INFO [2020-10-02 18:10:19,831] ({pool-2-thread-5} Logging.scala[logInfo]:54) - Added JAR /zeppelin/interpreter/spark/spark-interpreter-0.8.1.jar at spark://172.17.0.2:36811/jars/spark-interpreter-0.8.1.jar with timestamp 1601662219829
+ INFO [2020-10-02 18:10:20,083] ({pool-2-thread-5} Logging.scala[logInfo]:54) - Starting executor ID driver on host localhost
+ INFO [2020-10-02 18:10:20,148] ({pool-2-thread-5} Logging.scala[logInfo]:54) - Using REPL class URI: spark://172.17.0.2:36811/classes
+ INFO [2020-10-02 18:10:20,257] ({pool-2-thread-5} Logging.scala[logInfo]:54) - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 46147.
+ INFO [2020-10-02 18:10:20,265] ({pool-2-thread-5} Logging.scala[logInfo]:54) - Server created on 172.17.0.2:46147
+ INFO [2020-10-02 18:10:20,280] ({pool-2-thread-5} Logging.scala[logInfo]:54) - Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+ INFO [2020-10-02 18:10:20,293] ({pool-2-thread-5} Logging.scala[logInfo]:54) - Registering BlockManager BlockManagerId(driver, 172.17.0.2, 46147, None)
+ INFO [2020-10-02 18:10:20,315] ({dispatcher-event-loop-0} Logging.scala[logInfo]:54) - Registering block manager 172.17.0.2:46147 with 408.9 MB RAM, BlockManagerId(driver, 172.17.0.2, 46147, None)
+ INFO [2020-10-02 18:10:20,330] ({pool-2-thread-5} Logging.scala[logInfo]:54) - Registered BlockManager BlockManagerId(driver, 172.17.0.2, 46147, None)
+ INFO [2020-10-02 18:10:20,336] ({pool-2-thread-5} Logging.scala[logInfo]:54) - Initialized BlockManager: BlockManagerId(driver, 172.17.0.2, 46147, None)
+ INFO [2020-10-02 18:10:21,079] ({pool-2-thread-5} ContextHandler.java[doStart]:781) - Started o.s.j.s.ServletContextHandler@39a8848c{/metrics/json,null,AVAILABLE,@Spark}
+ INFO [2020-10-02 18:10:32,506] ({pool-2-thread-5} SparkShims.java[loadShims]:62) - Initializing shims for Spark 2.x
+ INFO [2020-10-02 18:10:33,024] ({pool-1-thread-3} Logging.scala[logInfo]:54) - Asked to cancel job group zeppelin-2FNBR4RB9-20201002-180628_605462956
+ INFO [2020-10-02 18:10:33,053] ({pool-1-thread-3} RemoteInterpreterServer.java[cancel]:681) - cancel org.apache.zeppelin.spark.SparkInterpreter 20201002-180628_605462956
+ INFO [2020-10-02 18:10:33,059] ({pool-1-thread-3} Logging.scala[logInfo]:54) - Asked to cancel job group zeppelin-2FNBR4RB9-20201002-180628_605462956
+ INFO [2020-10-02 18:10:33,881] ({pool-2-thread-5} SchedulerFactory.java[jobFinished]:120) - Job 20201002-180628_605462956 finished by scheduler interpreter_211172211
+ INFO [2020-10-02 18:11:08,570] ({pool-2-thread-5} SchedulerFactory.java[jobStarted]:114) - Job 20201002-181033_2142351360 started by scheduler interpreter_211172211
+ INFO [2020-10-02 18:11:08,749] ({pool-2-thread-5} SchedulerFactory.java[jobFinished]:120) - Job 20201002-181033_2142351360 finished by scheduler interpreter_211172211
+ INFO [2020-10-02 18:13:40,099] ({pool-2-thread-6} SchedulerFactory.java[jobStarted]:114) - Job 20201002-181200_1978348639 started by scheduler interpreter_211172211
+ INFO [2020-10-02 18:13:40,193] ({pool-2-thread-6} SchedulerFactory.java[jobFinished]:120) - Job 20201002-181200_1978348639 finished by scheduler interpreter_211172211
+ INFO [2020-10-02 18:39:59,991] ({pool-2-thread-5} SchedulerFactory.java[jobStarted]:114) - Job 20201002-183928_2072107786 started by scheduler interpreter_211172211
+ INFO [2020-10-02 18:40:03,465] ({pool-2-thread-5} Logging.scala[logInfo]:54) - Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir ('file:/zeppelin/spark-warehouse').
+ INFO [2020-10-02 18:40:03,473] ({pool-2-thread-5} Logging.scala[logInfo]:54) - Warehouse path is 'file:/zeppelin/spark-warehouse'.
+ INFO [2020-10-02 18:40:03,571] ({pool-2-thread-5} ContextHandler.java[doStart]:781) - Started o.s.j.s.ServletContextHandler@754fe47d{/SQL,null,AVAILABLE,@Spark}
+ INFO [2020-10-02 18:40:03,583] ({pool-2-thread-5} ContextHandler.java[doStart]:781) - Started o.s.j.s.ServletContextHandler@551156e3{/SQL/json,null,AVAILABLE,@Spark}
+ INFO [2020-10-02 18:40:03,600] ({pool-2-thread-5} ContextHandler.java[doStart]:781) - Started o.s.j.s.ServletContextHandler@594e0263{/SQL/execution,null,AVAILABLE,@Spark}
+ INFO [2020-10-02 18:40:03,609] ({pool-2-thread-5} ContextHandler.java[doStart]:781) - Started o.s.j.s.ServletContextHandler@4f81784c{/SQL/execution/json,null,AVAILABLE,@Spark}
+ INFO [2020-10-02 18:40:03,634] ({pool-2-thread-5} ContextHandler.java[doStart]:781) - Started o.s.j.s.ServletContextHandler@77ed7232{/static/sql,null,AVAILABLE,@Spark}
+ INFO [2020-10-02 18:40:10,593] ({pool-2-thread-5} Logging.scala[logInfo]:54) - Registered StateStoreCoordinator endpoint
+ INFO [2020-10-02 18:40:15,814] ({pool-2-thread-5} Logging.scala[logInfo]:54) - Pruning directories with: 
+ INFO [2020-10-02 18:40:15,847] ({pool-2-thread-5} Logging.scala[logInfo]:54) - Post-Scan Filters: (length(trim(value#0)) > 0)
+ INFO [2020-10-02 18:40:15,886] ({pool-2-thread-5} Logging.scala[logInfo]:54) - Output Data Schema: struct<value: string>
+ INFO [2020-10-02 18:40:15,943] ({pool-2-thread-5} Logging.scala[logInfo]:54) - Pushed Filters: 
+ INFO [2020-10-02 18:40:17,234] ({pool-2-thread-5} Logging.scala[logInfo]:54) - Code generated in 823.9212 ms
+ INFO [2020-10-02 18:40:18,641] ({pool-2-thread-5} Logging.scala[logInfo]:54) - Code generated in 129.3374 ms
+ INFO [2020-10-02 18:40:18,963] ({pool-2-thread-5} Logging.scala[logInfo]:54) - Block broadcast_0 stored as values in memory (estimated size 288.4 KB, free 408.6 MB)
+ INFO [2020-10-02 18:40:19,914] ({pool-2-thread-5} Logging.scala[logInfo]:54) - Block broadcast_0_piece0 stored as bytes in memory (estimated size 24.2 KB, free 408.6 MB)
+ INFO [2020-10-02 18:40:19,931] ({dispatcher-event-loop-0} Logging.scala[logInfo]:54) - Added broadcast_0_piece0 in memory on 172.17.0.2:46147 (size: 24.2 KB, free: 408.9 MB)
+ INFO [2020-10-02 18:40:19,948] ({pool-2-thread-5} Logging.scala[logInfo]:54) - Created broadcast 0 from csv at <console>:29
+ INFO [2020-10-02 18:40:20,006] ({pool-2-thread-5} Logging.scala[logInfo]:54) - Planning scan with bin packing, max size: 39479118 bytes, open cost is considered as scanning 4194304 bytes.
+ INFO [2020-10-02 18:40:20,450] ({pool-2-thread-5} Logging.scala[logInfo]:54) - Starting job: csv at <console>:29
+ INFO [2020-10-02 18:40:20,500] ({dag-scheduler-event-loop} Logging.scala[logInfo]:54) - Got job 0 (csv at <console>:29) with 1 output partitions
+ INFO [2020-10-02 18:40:20,505] ({dag-scheduler-event-loop} Logging.scala[logInfo]:54) - Final stage: ResultStage 0 (csv at <console>:29)
+ INFO [2020-10-02 18:40:20,509] ({dag-scheduler-event-loop} Logging.scala[logInfo]:54) - Parents of final stage: List()
+ INFO [2020-10-02 18:40:20,517] ({dag-scheduler-event-loop} Logging.scala[logInfo]:54) - Missing parents: List()
+ INFO [2020-10-02 18:40:20,547] ({dag-scheduler-event-loop} Logging.scala[logInfo]:54) - Submitting ResultStage 0 (MapPartitionsRDD[2] at csv at <console>:29), which has no missing parents
+ INFO [2020-10-02 18:40:20,939] ({dag-scheduler-event-loop} Logging.scala[logInfo]:54) - Block broadcast_1 stored as values in memory (estimated size 8.2 KB, free 408.6 MB)
+ INFO [2020-10-02 18:40:20,950] ({dag-scheduler-event-loop} Logging.scala[logInfo]:54) - Block broadcast_1_piece0 stored as bytes in memory (estimated size 4.3 KB, free 408.6 MB)
+ INFO [2020-10-02 18:40:20,958] ({dispatcher-event-loop-1} Logging.scala[logInfo]:54) - Added broadcast_1_piece0 in memory on 172.17.0.2:46147 (size: 4.3 KB, free: 408.9 MB)
+ INFO [2020-10-02 18:40:20,963] ({dag-scheduler-event-loop} Logging.scala[logInfo]:54) - Created broadcast 1 from broadcast at DAGScheduler.scala:1006
+ INFO [2020-10-02 18:40:21,020] ({dag-scheduler-event-loop} Logging.scala[logInfo]:54) - Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[2] at csv at <console>:29) (first 15 tasks are for partitions Vector(0))
+ INFO [2020-10-02 18:40:21,031] ({dag-scheduler-event-loop} Logging.scala[logInfo]:54) - Adding task set 0.0 with 1 tasks
+ INFO [2020-10-02 18:40:21,164] ({dispatcher-event-loop-0} Logging.scala[logInfo]:54) - Starting task 0.0 in stage 0.0 (TID 0, localhost, executor driver, partition 0, PROCESS_LOCAL, 5269 bytes)
+ INFO [2020-10-02 18:40:21,199] ({Executor task launch worker for task 0} Logging.scala[logInfo]:54) - Running task 0.0 in stage 0.0 (TID 0)
+ INFO [2020-10-02 18:40:21,222] ({Executor task launch worker for task 0} Logging.scala[logInfo]:54) - Fetching spark://172.17.0.2:36811/jars/spark-interpreter-0.8.1.jar with timestamp 1601662219829
+ INFO [2020-10-02 18:40:21,462] ({Executor task launch worker for task 0} TransportClientFactory.java[createClient]:254) - Successfully created connection to /172.17.0.2:36811 after 134 ms (0 ms spent in bootstraps)
+ INFO [2020-10-02 18:40:21,528] ({Executor task launch worker for task 0} Logging.scala[logInfo]:54) - Fetching spark://172.17.0.2:36811/jars/spark-interpreter-0.8.1.jar to /tmp/spark-c3938d48-1d2e-472c-956a-9274101e57e7/userFiles-ed91949b-1a73-43f4-9af9-40af123cb24a/fetchFileTemp6585169451969210326.tmp
+ INFO [2020-10-02 18:40:22,332] ({Executor task launch worker for task 0} Logging.scala[logInfo]:54) - Adding file:/tmp/spark-c3938d48-1d2e-472c-956a-9274101e57e7/userFiles-ed91949b-1a73-43f4-9af9-40af123cb24a/spark-interpreter-0.8.1.jar to class loader
+ INFO [2020-10-02 18:40:22,714] ({Executor task launch worker for task 0} Logging.scala[logInfo]:54) - Reading File path: file:///zeppelin/data/amazon.csv, range: 0-35284814, partition values: [empty row]
+ INFO [2020-10-02 18:40:22,793] ({Executor task launch worker for task 0} Logging.scala[logInfo]:54) - Code generated in 62.238 ms
+ INFO [2020-10-02 18:40:23,002] ({Executor task launch worker for task 0} Logging.scala[logInfo]:54) - Finished task 0.0 in stage 0.0 (TID 0). 1537 bytes result sent to driver
+ INFO [2020-10-02 18:40:23,042] ({task-result-getter-0} Logging.scala[logInfo]:54) - Finished task 0.0 in stage 0.0 (TID 0) in 1914 ms on localhost (executor driver) (1/1)
+ INFO [2020-10-02 18:40:23,054] ({task-result-getter-0} Logging.scala[logInfo]:54) - Removed TaskSet 0.0, whose tasks have all completed, from pool 
+ INFO [2020-10-02 18:40:23,067] ({dag-scheduler-event-loop} Logging.scala[logInfo]:54) - ResultStage 0 (csv at <console>:29) finished in 1.969 s
+ INFO [2020-10-02 18:40:23,098] ({pool-2-thread-5} Logging.scala[logInfo]:54) - Job 0 finished: csv at <console>:29, took 2.643003 s
+ INFO [2020-10-02 18:40:23,371] ({pool-2-thread-5} Logging.scala[logInfo]:54) - Pruning directories with: 
+ INFO [2020-10-02 18:40:23,379] ({pool-2-thread-5} Logging.scala[logInfo]:54) - Post-Scan Filters: 
+ INFO [2020-10-02 18:40:23,381] ({pool-2-thread-5} Logging.scala[logInfo]:54) - Output Data Schema: struct<value: string>
+ INFO [2020-10-02 18:40:23,384] ({pool-2-thread-5} Logging.scala[logInfo]:54) - Pushed Filters: 
+ INFO [2020-10-02 18:40:23,462] ({pool-2-thread-5} Logging.scala[logInfo]:54) - Code generated in 65.0119 ms
+ INFO [2020-10-02 18:40:23,501] ({pool-2-thread-5} Logging.scala[logInfo]:54) - Block broadcast_2 stored as values in memory (estimated size 288.4 KB, free 408.3 MB)
+ INFO [2020-10-02 18:40:23,582] ({pool-2-thread-5} Logging.scala[logInfo]:54) - Block broadcast_2_piece0 stored as bytes in memory (estimated size 24.2 KB, free 408.3 MB)
+ INFO [2020-10-02 18:40:23,597] ({dispatcher-event-loop-1} Logging.scala[logInfo]:54) - Added broadcast_2_piece0 in memory on 172.17.0.2:46147 (size: 24.2 KB, free: 408.8 MB)
+ INFO [2020-10-02 18:40:23,616] ({pool-2-thread-5} Logging.scala[logInfo]:54) - Created broadcast 2 from csv at <console>:29
+ INFO [2020-10-02 18:40:23,620] ({pool-2-thread-5} Logging.scala[logInfo]:54) - Planning scan with bin packing, max size: 39479118 bytes, open cost is considered as scanning 4194304 bytes.
+ INFO [2020-10-02 18:40:23,960] ({pool-2-thread-5} Logging.scala[logInfo]:54) - Starting job: csv at <console>:29
+ INFO [2020-10-02 18:40:23,967] ({dag-scheduler-event-loop} Logging.scala[logInfo]:54) - Got job 1 (csv at <console>:29) with 1 output partitions
+ INFO [2020-10-02 18:40:23,969] ({dag-scheduler-event-loop} Logging.scala[logInfo]:54) - Final stage: ResultStage 1 (csv at <console>:29)
+ INFO [2020-10-02 18:40:23,971] ({dag-scheduler-event-loop} Logging.scala[logInfo]:54) - Parents of final stage: List()
+ INFO [2020-10-02 18:40:23,973] ({dag-scheduler-event-loop} Logging.scala[logInfo]:54) - Missing parents: List()
+ INFO [2020-10-02 18:40:23,978] ({dag-scheduler-event-loop} Logging.scala[logInfo]:54) - Submitting ResultStage 1 (MapPartitionsRDD[7] at csv at <console>:29), which has no missing parents
+ INFO [2020-10-02 18:40:23,992] ({dag-scheduler-event-loop} Logging.scala[logInfo]:54) - Block broadcast_3 stored as values in memory (estimated size 13.1 KB, free 408.3 MB)
+ INFO [2020-10-02 18:40:24,009] ({dag-scheduler-event-loop} Logging.scala[logInfo]:54) - Block broadcast_3_piece0 stored as bytes in memory (estimated size 7.0 KB, free 408.3 MB)
+ INFO [2020-10-02 18:40:24,013] ({dispatcher-event-loop-0} Logging.scala[logInfo]:54) - Added broadcast_3_piece0 in memory on 172.17.0.2:46147 (size: 7.0 KB, free: 408.8 MB)
+ INFO [2020-10-02 18:40:24,018] ({dag-scheduler-event-loop} Logging.scala[logInfo]:54) - Created broadcast 3 from broadcast at DAGScheduler.scala:1006
+ INFO [2020-10-02 18:40:24,024] ({dag-scheduler-event-loop} Logging.scala[logInfo]:54) - Submitting 1 missing tasks from ResultStage 1 (MapPartitionsRDD[7] at csv at <console>:29) (first 15 tasks are for partitions Vector(0))
+ INFO [2020-10-02 18:40:24,026] ({dag-scheduler-event-loop} Logging.scala[logInfo]:54) - Adding task set 1.0 with 1 tasks
+ INFO [2020-10-02 18:40:24,034] ({dispatcher-event-loop-1} Logging.scala[logInfo]:54) - Starting task 0.0 in stage 1.0 (TID 1, localhost, executor driver, partition 0, PROCESS_LOCAL, 5269 bytes)
+ INFO [2020-10-02 18:40:24,042] ({Executor task launch worker for task 1} Logging.scala[logInfo]:54) - Running task 0.0 in stage 1.0 (TID 1)
+ INFO [2020-10-02 18:40:24,087] ({Executor task launch worker for task 1} Logging.scala[logInfo]:54) - Reading File path: file:///zeppelin/data/amazon.csv, range: 0-35284814, partition values: [empty row]
+ INFO [2020-10-02 18:40:26,996] ({dispatcher-event-loop-1} Logging.scala[logInfo]:54) - Removed broadcast_0_piece0 on 172.17.0.2:46147 in memory (size: 24.2 KB, free: 408.9 MB)
+ INFO [2020-10-02 18:40:27,126] ({Spark Context Cleaner} Logging.scala[logInfo]:54) - Cleaned accumulator 4
+ INFO [2020-10-02 18:40:27,155] ({Spark Context Cleaner} Logging.scala[logInfo]:54) - Cleaned accumulator 0
+ INFO [2020-10-02 18:40:27,165] ({Spark Context Cleaner} Logging.scala[logInfo]:54) - Cleaned accumulator 5
+ INFO [2020-10-02 18:40:27,170] ({Spark Context Cleaner} Logging.scala[logInfo]:54) - Cleaned accumulator 1
+ INFO [2020-10-02 18:40:27,180] ({Spark Context Cleaner} Logging.scala[logInfo]:54) - Cleaned accumulator 3
+ INFO [2020-10-02 18:40:27,190] ({Spark Context Cleaner} Logging.scala[logInfo]:54) - Cleaned accumulator 2
+ INFO [2020-10-02 18:40:27,204] ({dispatcher-event-loop-0} Logging.scala[logInfo]:54) - Removed broadcast_1_piece0 on 172.17.0.2:46147 in memory (size: 4.3 KB, free: 408.9 MB)
+ INFO [2020-10-02 18:40:27,902] ({Executor task launch worker for task 1} Logging.scala[logInfo]:54) - Finished task 0.0 in stage 1.0 (TID 1). 1634 bytes result sent to driver
+ INFO [2020-10-02 18:40:27,913] ({task-result-getter-1} Logging.scala[logInfo]:54) - Finished task 0.0 in stage 1.0 (TID 1) in 3883 ms on localhost (executor driver) (1/1)
+ INFO [2020-10-02 18:40:27,917] ({task-result-getter-1} Logging.scala[logInfo]:54) - Removed TaskSet 1.0, whose tasks have all completed, from pool 
+ INFO [2020-10-02 18:40:27,918] ({dag-scheduler-event-loop} Logging.scala[logInfo]:54) - ResultStage 1 (csv at <console>:29) finished in 3.887 s
+ INFO [2020-10-02 18:40:27,925] ({pool-2-thread-5} Logging.scala[logInfo]:54) - Job 1 finished: csv at <console>:29, took 3.958560 s
+ INFO [2020-10-02 18:40:28,002] ({pool-2-thread-5} Logging.scala[logInfo]:54) - Parsing command: amazon
+ INFO [2020-10-02 18:40:29,030] ({pool-2-thread-5} SchedulerFactory.java[jobFinished]:120) - Job 20201002-183928_2072107786 finished by scheduler interpreter_211172211
+ INFO [2020-10-02 18:42:56,870] ({pool-2-thread-7} SchedulerFactory.java[jobStarted]:114) - Job 20201002-183959_1361592542 started by scheduler interpreter_211172211
+ INFO [2020-10-02 18:42:56,904] ({pool-2-thread-7} Logging.scala[logInfo]:54) - Parsing command: select *from amazon
+ INFO [2020-10-02 18:42:57,230] ({Spark Context Cleaner} Logging.scala[logInfo]:54) - Cleaned accumulator 58
+ INFO [2020-10-02 18:42:57,239] ({Spark Context Cleaner} Logging.scala[logInfo]:54) - Cleaned accumulator 55
+ INFO [2020-10-02 18:42:57,241] ({Spark Context Cleaner} Logging.scala[logInfo]:54) - Cleaned accumulator 56
+ INFO [2020-10-02 18:42:57,256] ({dispatcher-event-loop-0} Logging.scala[logInfo]:54) - Removed broadcast_3_piece0 on 172.17.0.2:46147 in memory (size: 7.0 KB, free: 408.9 MB)
+ INFO [2020-10-02 18:42:57,269] ({dispatcher-event-loop-1} Logging.scala[logInfo]:54) - Removed broadcast_2_piece0 on 172.17.0.2:46147 in memory (size: 24.2 KB, free: 408.9 MB)
+ INFO [2020-10-02 18:42:57,274] ({Spark Context Cleaner} Logging.scala[logInfo]:54) - Cleaned accumulator 57
+ INFO [2020-10-02 18:42:57,277] ({Spark Context Cleaner} Logging.scala[logInfo]:54) - Cleaned accumulator 54
+ INFO [2020-10-02 18:42:57,548] ({pool-2-thread-7} Logging.scala[logInfo]:54) - Pruning directories with: 
+ INFO [2020-10-02 18:42:57,564] ({pool-2-thread-7} Logging.scala[logInfo]:54) - Post-Scan Filters: 
+ INFO [2020-10-02 18:42:57,568] ({pool-2-thread-7} Logging.scala[logInfo]:54) - Output Data Schema: struct<uniq_id: string, product_name: string, manufacturer: string, price: string, number_available_in_stock: string ... 15 more fields>
+ INFO [2020-10-02 18:42:57,573] ({pool-2-thread-7} Logging.scala[logInfo]:54) - Pushed Filters: 
+ INFO [2020-10-02 18:42:57,839] ({pool-2-thread-7} Logging.scala[logInfo]:54) - Code generated in 182.4302 ms
+ INFO [2020-10-02 18:42:57,892] ({pool-2-thread-7} Logging.scala[logInfo]:54) - Block broadcast_4 stored as values in memory (estimated size 288.9 KB, free 408.6 MB)
+ INFO [2020-10-02 18:42:57,935] ({pool-2-thread-7} Logging.scala[logInfo]:54) - Block broadcast_4_piece0 stored as bytes in memory (estimated size 24.2 KB, free 408.6 MB)
+ INFO [2020-10-02 18:42:57,940] ({dispatcher-event-loop-0} Logging.scala[logInfo]:54) - Added broadcast_4_piece0 in memory on 172.17.0.2:46147 (size: 24.2 KB, free: 408.9 MB)
+ INFO [2020-10-02 18:42:57,946] ({pool-2-thread-7} Logging.scala[logInfo]:54) - Created broadcast 4 from take at NativeMethodAccessorImpl.java:0
+ INFO [2020-10-02 18:42:57,964] ({pool-2-thread-7} Logging.scala[logInfo]:54) - Planning scan with bin packing, max size: 39479118 bytes, open cost is considered as scanning 4194304 bytes.
+ INFO [2020-10-02 18:42:57,992] ({pool-2-thread-7} Logging.scala[logInfo]:54) - Starting job: take at NativeMethodAccessorImpl.java:0
+ INFO [2020-10-02 18:42:57,999] ({dag-scheduler-event-loop} Logging.scala[logInfo]:54) - Got job 2 (take at NativeMethodAccessorImpl.java:0) with 1 output partitions
+ INFO [2020-10-02 18:42:58,000] ({dag-scheduler-event-loop} Logging.scala[logInfo]:54) - Final stage: ResultStage 2 (take at NativeMethodAccessorImpl.java:0)
+ INFO [2020-10-02 18:42:58,001] ({dag-scheduler-event-loop} Logging.scala[logInfo]:54) - Parents of final stage: List()
+ INFO [2020-10-02 18:42:58,003] ({dag-scheduler-event-loop} Logging.scala[logInfo]:54) - Missing parents: List()
+ INFO [2020-10-02 18:42:58,006] ({dag-scheduler-event-loop} Logging.scala[logInfo]:54) - Submitting ResultStage 2 (MapPartitionsRDD[10] at take at NativeMethodAccessorImpl.java:0), which has no missing parents
+ INFO [2020-10-02 18:42:58,024] ({dag-scheduler-event-loop} Logging.scala[logInfo]:54) - Block broadcast_5 stored as values in memory (estimated size 11.0 KB, free 408.6 MB)
+ INFO [2020-10-02 18:42:58,036] ({dag-scheduler-event-loop} Logging.scala[logInfo]:54) - Block broadcast_5_piece0 stored as bytes in memory (estimated size 5.8 KB, free 408.6 MB)
+ INFO [2020-10-02 18:42:58,045] ({dispatcher-event-loop-1} Logging.scala[logInfo]:54) - Added broadcast_5_piece0 in memory on 172.17.0.2:46147 (size: 5.8 KB, free: 408.9 MB)
+ INFO [2020-10-02 18:42:58,051] ({dag-scheduler-event-loop} Logging.scala[logInfo]:54) - Created broadcast 5 from broadcast at DAGScheduler.scala:1006
+ INFO [2020-10-02 18:42:58,059] ({dag-scheduler-event-loop} Logging.scala[logInfo]:54) - Submitting 1 missing tasks from ResultStage 2 (MapPartitionsRDD[10] at take at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+ INFO [2020-10-02 18:42:58,069] ({dag-scheduler-event-loop} Logging.scala[logInfo]:54) - Adding task set 2.0 with 1 tasks
+ INFO [2020-10-02 18:42:58,074] ({dispatcher-event-loop-0} Logging.scala[logInfo]:54) - Starting task 0.0 in stage 2.0 (TID 2, localhost, executor driver, partition 0, PROCESS_LOCAL, 5269 bytes)
+ INFO [2020-10-02 18:42:58,081] ({Executor task launch worker for task 2} Logging.scala[logInfo]:54) - Running task 0.0 in stage 2.0 (TID 2)
+ INFO [2020-10-02 18:42:58,115] ({Executor task launch worker for task 2} Logging.scala[logInfo]:54) - Reading File path: file:///zeppelin/data/amazon.csv, range: 0-35284814, partition values: [empty row]
+ INFO [2020-10-02 18:42:58,143] ({Executor task launch worker for task 2} TransportClientFactory.java[createClient]:179) - Found inactive connection to /172.17.0.2:36811, creating a new one.
+ INFO [2020-10-02 18:42:58,151] ({Executor task launch worker for task 2} TransportClientFactory.java[createClient]:254) - Successfully created connection to /172.17.0.2:36811 after 2 ms (0 ms spent in bootstraps)
+ INFO [2020-10-02 18:42:58,200] ({Executor task launch worker for task 2} Logging.scala[logInfo]:54) - Code generated in 71.6819 ms
+ INFO [2020-10-02 18:42:58,443] ({Executor task launch worker for task 2} Logging.scala[logInfo]:54) - Finished task 0.0 in stage 2.0 (TID 2). 267086 bytes result sent to driver
+ INFO [2020-10-02 18:42:58,458] ({task-result-getter-2} Logging.scala[logInfo]:54) - Finished task 0.0 in stage 2.0 (TID 2) in 384 ms on localhost (executor driver) (1/1)
+ INFO [2020-10-02 18:42:58,460] ({task-result-getter-2} Logging.scala[logInfo]:54) - Removed TaskSet 2.0, whose tasks have all completed, from pool 
+ INFO [2020-10-02 18:42:58,464] ({dag-scheduler-event-loop} Logging.scala[logInfo]:54) - ResultStage 2 (take at NativeMethodAccessorImpl.java:0) finished in 0.390 s
+ INFO [2020-10-02 18:42:58,468] ({pool-2-thread-7} Logging.scala[logInfo]:54) - Job 2 finished: take at NativeMethodAccessorImpl.java:0, took 0.472194 s
+ INFO [2020-10-02 18:42:58,665] ({pool-2-thread-7} SchedulerFactory.java[jobFinished]:120) - Job 20201002-183959_1361592542 finished by scheduler interpreter_211172211
+ INFO [2020-10-02 18:45:40,429] ({pool-2-thread-6} SchedulerFactory.java[jobStarted]:114) - Job 20201002-184256_2016101604 started by scheduler interpreter_211172211
+ INFO [2020-10-02 18:45:40,458] ({pool-2-thread-6} Logging.scala[logInfo]:54) - Parsing command: select * from amazon where product_name like  '%hobby%'
+ INFO [2020-10-02 18:45:41,040] ({pool-2-thread-6} Logging.scala[logInfo]:54) - Pruning directories with: 
+ INFO [2020-10-02 18:45:41,078] ({pool-2-thread-6} Logging.scala[logInfo]:54) - Post-Scan Filters: isnotnull(product_name#13),Contains(product_name#13, hobby)
+ INFO [2020-10-02 18:45:41,081] ({pool-2-thread-6} Logging.scala[logInfo]:54) - Output Data Schema: struct<uniq_id: string, product_name: string, manufacturer: string, price: string, number_available_in_stock: string ... 15 more fields>
+ INFO [2020-10-02 18:45:41,117] ({pool-2-thread-6} Logging.scala[logInfo]:54) - Pushed Filters: IsNotNull(product_name),StringContains(product_name,hobby)
+ INFO [2020-10-02 18:45:41,394] ({pool-2-thread-6} Logging.scala[logInfo]:54) - Code generated in 97.6952 ms
+ INFO [2020-10-02 18:45:41,436] ({pool-2-thread-6} Logging.scala[logInfo]:54) - Block broadcast_6 stored as values in memory (estimated size 288.9 KB, free 408.3 MB)
+ INFO [2020-10-02 18:45:41,465] ({pool-2-thread-6} Logging.scala[logInfo]:54) - Block broadcast_6_piece0 stored as bytes in memory (estimated size 24.2 KB, free 408.3 MB)
+ INFO [2020-10-02 18:45:41,471] ({dispatcher-event-loop-0} Logging.scala[logInfo]:54) - Added broadcast_6_piece0 in memory on 172.17.0.2:46147 (size: 24.2 KB, free: 408.8 MB)
+ INFO [2020-10-02 18:45:41,475] ({pool-2-thread-6} Logging.scala[logInfo]:54) - Created broadcast 6 from take at NativeMethodAccessorImpl.java:0
+ INFO [2020-10-02 18:45:41,487] ({pool-2-thread-6} Logging.scala[logInfo]:54) - Planning scan with bin packing, max size: 39479118 bytes, open cost is considered as scanning 4194304 bytes.
+ INFO [2020-10-02 18:45:41,518] ({pool-2-thread-6} Logging.scala[logInfo]:54) - Starting job: take at NativeMethodAccessorImpl.java:0
+ INFO [2020-10-02 18:45:41,537] ({dag-scheduler-event-loop} Logging.scala[logInfo]:54) - Got job 3 (take at NativeMethodAccessorImpl.java:0) with 1 output partitions
+ INFO [2020-10-02 18:45:41,550] ({dag-scheduler-event-loop} Logging.scala[logInfo]:54) - Final stage: ResultStage 3 (take at NativeMethodAccessorImpl.java:0)
+ INFO [2020-10-02 18:45:41,557] ({dag-scheduler-event-loop} Logging.scala[logInfo]:54) - Parents of final stage: List()
+ INFO [2020-10-02 18:45:41,564] ({dag-scheduler-event-loop} Logging.scala[logInfo]:54) - Missing parents: List()
+ INFO [2020-10-02 18:45:41,585] ({dag-scheduler-event-loop} Logging.scala[logInfo]:54) - Submitting ResultStage 3 (MapPartitionsRDD[13] at take at NativeMethodAccessorImpl.java:0), which has no missing parents
+ INFO [2020-10-02 18:45:41,628] ({dag-scheduler-event-loop} Logging.scala[logInfo]:54) - Block broadcast_7 stored as values in memory (estimated size 16.4 KB, free 408.3 MB)
+ INFO [2020-10-02 18:45:41,650] ({dag-scheduler-event-loop} Logging.scala[logInfo]:54) - Block broadcast_7_piece0 stored as bytes in memory (estimated size 7.2 KB, free 408.2 MB)
+ INFO [2020-10-02 18:45:41,658] ({dispatcher-event-loop-1} Logging.scala[logInfo]:54) - Added broadcast_7_piece0 in memory on 172.17.0.2:46147 (size: 7.2 KB, free: 408.8 MB)
+ INFO [2020-10-02 18:45:41,669] ({dag-scheduler-event-loop} Logging.scala[logInfo]:54) - Created broadcast 7 from broadcast at DAGScheduler.scala:1006
+ INFO [2020-10-02 18:45:41,674] ({dag-scheduler-event-loop} Logging.scala[logInfo]:54) - Submitting 1 missing tasks from ResultStage 3 (MapPartitionsRDD[13] at take at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+ INFO [2020-10-02 18:45:41,678] ({dag-scheduler-event-loop} Logging.scala[logInfo]:54) - Adding task set 3.0 with 1 tasks
+ INFO [2020-10-02 18:45:41,691] ({dispatcher-event-loop-0} Logging.scala[logInfo]:54) - Starting task 0.0 in stage 3.0 (TID 3, localhost, executor driver, partition 0, PROCESS_LOCAL, 5269 bytes)
+ INFO [2020-10-02 18:45:41,707] ({Executor task launch worker for task 3} Logging.scala[logInfo]:54) - Running task 0.0 in stage 3.0 (TID 3)
+ INFO [2020-10-02 18:45:41,743] ({Executor task launch worker for task 3} Logging.scala[logInfo]:54) - Reading File path: file:///zeppelin/data/amazon.csv, range: 0-35284814, partition values: [empty row]
+ INFO [2020-10-02 18:45:42,589] ({dispatcher-event-loop-0} Logging.scala[logInfo]:54) - Removed broadcast_5_piece0 on 172.17.0.2:46147 in memory (size: 5.8 KB, free: 408.8 MB)
+ INFO [2020-10-02 18:45:42,618] ({Spark Context Cleaner} Logging.scala[logInfo]:54) - Cleaned accumulator 86
+ INFO [2020-10-02 18:45:42,622] ({Spark Context Cleaner} Logging.scala[logInfo]:54) - Cleaned accumulator 84
+ INFO [2020-10-02 18:45:42,631] ({Spark Context Cleaner} Logging.scala[logInfo]:54) - Cleaned accumulator 83
+ INFO [2020-10-02 18:45:42,648] ({dispatcher-event-loop-0} Logging.scala[logInfo]:54) - Removed broadcast_4_piece0 on 172.17.0.2:46147 in memory (size: 24.2 KB, free: 408.9 MB)
+ INFO [2020-10-02 18:45:42,655] ({Spark Context Cleaner} Logging.scala[logInfo]:54) - Cleaned accumulator 85
+ INFO [2020-10-02 18:45:42,660] ({Spark Context Cleaner} Logging.scala[logInfo]:54) - Cleaned accumulator 87
+ INFO [2020-10-02 18:45:44,910] ({Executor task launch worker for task 3} Logging.scala[logInfo]:54) - Finished task 0.0 in stage 3.0 (TID 3). 16444 bytes result sent to driver
+ INFO [2020-10-02 18:45:44,925] ({task-result-getter-3} Logging.scala[logInfo]:54) - Finished task 0.0 in stage 3.0 (TID 3) in 3235 ms on localhost (executor driver) (1/1)
+ INFO [2020-10-02 18:45:44,929] ({task-result-getter-3} Logging.scala[logInfo]:54) - Removed TaskSet 3.0, whose tasks have all completed, from pool 
+ INFO [2020-10-02 18:45:44,933] ({dag-scheduler-event-loop} Logging.scala[logInfo]:54) - ResultStage 3 (take at NativeMethodAccessorImpl.java:0) finished in 3.240 s
+ INFO [2020-10-02 18:45:44,941] ({pool-2-thread-6} Logging.scala[logInfo]:54) - Job 3 finished: take at NativeMethodAccessorImpl.java:0, took 3.414638 s
+ INFO [2020-10-02 18:45:44,998] ({pool-2-thread-6} SchedulerFactory.java[jobFinished]:120) - Job 20201002-184256_2016101604 finished by scheduler interpreter_211172211
+ INFO [2020-10-02 18:46:26,226] ({pool-2-thread-8} SchedulerFactory.java[jobStarted]:114) - Job 20201002-184540_1067018649 started by scheduler interpreter_211172211
+ INFO [2020-10-02 18:46:27,054] ({pool-2-thread-8} SchedulerFactory.java[jobFinished]:120) - Job 20201002-184540_1067018649 finished by scheduler interpreter_211172211
+ INFO [2020-10-02 18:47:19,892] ({pool-2-thread-5} SchedulerFactory.java[jobStarted]:114) - Job 20201002-184626_1671250965 started by scheduler interpreter_211172211
+ INFO [2020-10-02 18:47:20,362] ({pool-2-thread-5} SchedulerFactory.java[jobFinished]:120) - Job 20201002-184626_1671250965 finished by scheduler interpreter_211172211
+ INFO [2020-10-02 18:47:48,797] ({pool-2-thread-9} SchedulerFactory.java[jobStarted]:114) - Job 20201002-184719_335530440 started by scheduler interpreter_211172211
+ INFO [2020-10-02 18:47:50,033] ({pool-2-thread-9} Logging.scala[logInfo]:54) - Parsing command: 
+SELECT * FROM amazon WHERE number_of_reviews = 
+
+ INFO [2020-10-02 18:47:51,443] ({pool-2-thread-9} SchedulerFactory.java[jobFinished]:120) - Job 20201002-184719_335530440 finished by scheduler interpreter_211172211
+ INFO [2020-10-02 18:48:14,478] ({pool-2-thread-7} SchedulerFactory.java[jobStarted]:114) - Job 20201002-184748_1455973394 started by scheduler interpreter_211172211
+ INFO [2020-10-02 18:48:14,496] ({pool-2-thread-7} Logging.scala[logInfo]:54) - Parsing command: select * from amazon where number_of_reviews >= ''
+ INFO [2020-10-02 18:48:14,739] ({pool-2-thread-7} Logging.scala[logInfo]:54) - Pruning directories with: 
+ INFO [2020-10-02 18:48:14,760] ({pool-2-thread-7} Logging.scala[logInfo]:54) - Post-Scan Filters: isnotnull(number_of_reviews#17),(number_of_reviews#17 >= )
+ INFO [2020-10-02 18:48:14,765] ({pool-2-thread-7} Logging.scala[logInfo]:54) - Output Data Schema: struct<uniq_id: string, product_name: string, manufacturer: string, price: string, number_available_in_stock: string ... 15 more fields>
+ INFO [2020-10-02 18:48:14,781] ({pool-2-thread-7} Logging.scala[logInfo]:54) - Pushed Filters: IsNotNull(number_of_reviews),GreaterThanOrEqual(number_of_reviews,)
+ INFO [2020-10-02 18:48:14,939] ({pool-2-thread-7} Logging.scala[logInfo]:54) - Code generated in 67.8171 ms
+ INFO [2020-10-02 18:48:14,966] ({pool-2-thread-7} Logging.scala[logInfo]:54) - Block broadcast_8 stored as values in memory (estimated size 288.9 KB, free 408.3 MB)
+ INFO [2020-10-02 18:48:14,997] ({pool-2-thread-7} Logging.scala[logInfo]:54) - Block broadcast_8_piece0 stored as bytes in memory (estimated size 24.2 KB, free 408.3 MB)
+ INFO [2020-10-02 18:48:15,001] ({dispatcher-event-loop-0} Logging.scala[logInfo]:54) - Added broadcast_8_piece0 in memory on 172.17.0.2:46147 (size: 24.2 KB, free: 408.8 MB)
+ INFO [2020-10-02 18:48:15,017] ({pool-2-thread-7} Logging.scala[logInfo]:54) - Created broadcast 8 from take at NativeMethodAccessorImpl.java:0
+ INFO [2020-10-02 18:48:15,024] ({pool-2-thread-7} Logging.scala[logInfo]:54) - Planning scan with bin packing, max size: 39479118 bytes, open cost is considered as scanning 4194304 bytes.
+ INFO [2020-10-02 18:48:15,050] ({pool-2-thread-7} Logging.scala[logInfo]:54) - Starting job: take at NativeMethodAccessorImpl.java:0
+ INFO [2020-10-02 18:48:15,058] ({dag-scheduler-event-loop} Logging.scala[logInfo]:54) - Got job 4 (take at NativeMethodAccessorImpl.java:0) with 1 output partitions
+ INFO [2020-10-02 18:48:15,062] ({dag-scheduler-event-loop} Logging.scala[logInfo]:54) - Final stage: ResultStage 4 (take at NativeMethodAccessorImpl.java:0)
+ INFO [2020-10-02 18:48:15,063] ({dag-scheduler-event-loop} Logging.scala[logInfo]:54) - Parents of final stage: List()
+ INFO [2020-10-02 18:48:15,066] ({dag-scheduler-event-loop} Logging.scala[logInfo]:54) - Missing parents: List()
+ INFO [2020-10-02 18:48:15,070] ({dag-scheduler-event-loop} Logging.scala[logInfo]:54) - Submitting ResultStage 4 (MapPartitionsRDD[16] at take at NativeMethodAccessorImpl.java:0), which has no missing parents
+ INFO [2020-10-02 18:48:15,078] ({dag-scheduler-event-loop} Logging.scala[logInfo]:54) - Block broadcast_9 stored as values in memory (estimated size 16.4 KB, free 408.2 MB)
+ INFO [2020-10-02 18:48:15,093] ({dag-scheduler-event-loop} Logging.scala[logInfo]:54) - Block broadcast_9_piece0 stored as bytes in memory (estimated size 7.2 KB, free 408.2 MB)
+ INFO [2020-10-02 18:48:15,097] ({dispatcher-event-loop-1} Logging.scala[logInfo]:54) - Added broadcast_9_piece0 in memory on 172.17.0.2:46147 (size: 7.2 KB, free: 408.8 MB)
+ INFO [2020-10-02 18:48:15,100] ({dag-scheduler-event-loop} Logging.scala[logInfo]:54) - Created broadcast 9 from broadcast at DAGScheduler.scala:1006
+ INFO [2020-10-02 18:48:15,106] ({dag-scheduler-event-loop} Logging.scala[logInfo]:54) - Submitting 1 missing tasks from ResultStage 4 (MapPartitionsRDD[16] at take at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+ INFO [2020-10-02 18:48:15,109] ({dag-scheduler-event-loop} Logging.scala[logInfo]:54) - Adding task set 4.0 with 1 tasks
+ INFO [2020-10-02 18:48:15,114] ({dispatcher-event-loop-0} Logging.scala[logInfo]:54) - Starting task 0.0 in stage 4.0 (TID 4, localhost, executor driver, partition 0, PROCESS_LOCAL, 5269 bytes)
+ INFO [2020-10-02 18:48:15,123] ({Executor task launch worker for task 4} Logging.scala[logInfo]:54) - Running task 0.0 in stage 4.0 (TID 4)
+ INFO [2020-10-02 18:48:15,159] ({Executor task launch worker for task 4} Logging.scala[logInfo]:54) - Reading File path: file:///zeppelin/data/amazon.csv, range: 0-35284814, partition values: [empty row]
+ INFO [2020-10-02 18:48:15,331] ({Executor task launch worker for task 4} Logging.scala[logInfo]:54) - Finished task 0.0 in stage 4.0 (TID 4). 668583 bytes result sent to driver
+ INFO [2020-10-02 18:48:15,345] ({task-result-getter-0} Logging.scala[logInfo]:54) - Finished task 0.0 in stage 4.0 (TID 4) in 232 ms on localhost (executor driver) (1/1)
+ INFO [2020-10-02 18:48:15,347] ({task-result-getter-0} Logging.scala[logInfo]:54) - Removed TaskSet 4.0, whose tasks have all completed, from pool 
+ INFO [2020-10-02 18:48:15,348] ({dag-scheduler-event-loop} Logging.scala[logInfo]:54) - ResultStage 4 (take at NativeMethodAccessorImpl.java:0) finished in 0.235 s
+ INFO [2020-10-02 18:48:15,353] ({pool-2-thread-7} Logging.scala[logInfo]:54) - Job 4 finished: take at NativeMethodAccessorImpl.java:0, took 0.297429 s
+ INFO [2020-10-02 18:48:15,676] ({Spark Context Cleaner} Logging.scala[logInfo]:54) - Cleaned accumulator 117
+ INFO [2020-10-02 18:48:15,696] ({dispatcher-event-loop-1} Logging.scala[logInfo]:54) - Removed broadcast_8_piece0 on 172.17.0.2:46147 in memory (size: 24.2 KB, free: 408.9 MB)
+ INFO [2020-10-02 18:48:15,728] ({Spark Context Cleaner} Logging.scala[logInfo]:54) - Cleaned accumulator 146
+ INFO [2020-10-02 18:48:15,730] ({Spark Context Cleaner} Logging.scala[logInfo]:54) - Cleaned accumulator 145
+ INFO [2020-10-02 18:48:15,733] ({Spark Context Cleaner} Logging.scala[logInfo]:54) - Cleaned accumulator 113
+ INFO [2020-10-02 18:48:15,735] ({Spark Context Cleaner} Logging.scala[logInfo]:54) - Cleaned accumulator 142
+ INFO [2020-10-02 18:48:15,749] ({Spark Context Cleaner} Logging.scala[logInfo]:54) - Cleaned accumulator 116
+ INFO [2020-10-02 18:48:15,759] ({Spark Context Cleaner} Logging.scala[logInfo]:54) - Cleaned accumulator 147
+ INFO [2020-10-02 18:48:15,765] ({Spark Context Cleaner} Logging.scala[logInfo]:54) - Cleaned accumulator 144
+ INFO [2020-10-02 18:48:15,787] ({dispatcher-event-loop-1} Logging.scala[logInfo]:54) - Removed broadcast_7_piece0 on 172.17.0.2:46147 in memory (size: 7.2 KB, free: 408.9 MB)
+ INFO [2020-10-02 18:48:15,795] ({Spark Context Cleaner} Logging.scala[logInfo]:54) - Cleaned accumulator 114
+ INFO [2020-10-02 18:48:15,797] ({Spark Context Cleaner} Logging.scala[logInfo]:54) - Cleaned accumulator 143
+ INFO [2020-10-02 18:48:15,801] ({Spark Context Cleaner} Logging.scala[logInfo]:54) - Cleaned accumulator 115
+ INFO [2020-10-02 18:48:15,808] ({dispatcher-event-loop-0} Logging.scala[logInfo]:54) - Removed broadcast_9_piece0 on 172.17.0.2:46147 in memory (size: 7.2 KB, free: 408.9 MB)
+ INFO [2020-10-02 18:48:15,814] ({Spark Context Cleaner} Logging.scala[logInfo]:54) - Cleaned accumulator 112
+ INFO [2020-10-02 18:48:15,819] ({dispatcher-event-loop-0} Logging.scala[logInfo]:54) - Removed broadcast_6_piece0 on 172.17.0.2:46147 in memory (size: 24.2 KB, free: 408.9 MB)
+ INFO [2020-10-02 18:48:15,875] ({pool-2-thread-7} SchedulerFactory.java[jobFinished]:120) - Job 20201002-184748_1455973394 finished by scheduler interpreter_211172211
+ INFO [2020-10-02 18:49:05,258] ({pool-2-thread-10} SchedulerFactory.java[jobStarted]:114) - Job 20201002-184814_143231866 started by scheduler interpreter_211172211
+ INFO [2020-10-02 18:49:05,826] ({pool-2-thread-10} SchedulerFactory.java[jobFinished]:120) - Job 20201002-184814_143231866 finished by scheduler interpreter_211172211
+ INFO [2020-10-02 18:49:10,253] ({pool-2-thread-6} SchedulerFactory.java[jobStarted]:114) - Job 20201002-184814_143231866 started by scheduler interpreter_211172211
+ INFO [2020-10-02 18:49:11,037] ({pool-2-thread-6} SchedulerFactory.java[jobFinished]:120) - Job 20201002-184814_143231866 finished by scheduler interpreter_211172211
+ INFO [2020-10-02 18:50:48,757] ({pool-2-thread-11} SchedulerFactory.java[jobStarted]:114) - Job 20200212-212422_497822727 started by scheduler interpreter_211172211
+ INFO [2020-10-02 18:50:50,580] ({pool-2-thread-11} SchedulerFactory.java[jobFinished]:120) - Job 20200212-212422_497822727 finished by scheduler interpreter_211172211
+ INFO [2020-10-02 18:50:59,477] ({pool-2-thread-8} SchedulerFactory.java[jobStarted]:114) - Job 20200212-212817_29379565 started by scheduler interpreter_211172211
+ INFO [2020-10-02 18:50:59,497] ({pool-2-thread-8} Logging.scala[logInfo]:54) - Parsing command: select * from fifa limit 1
+ERROR [2020-10-02 18:50:59,544] ({pool-2-thread-8} SparkSqlInterpreter.java[interpret]:126) - Invocation target exception
+java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.zeppelin.spark.SparkSqlInterpreter.interpret(SparkSqlInterpreter.java:121)
+	at org.apache.zeppelin.interpreter.LazyOpenInterpreter.interpret(LazyOpenInterpreter.java:103)
+	at org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:632)
+	at org.apache.zeppelin.scheduler.Job.run(Job.java:188)
+	at org.apache.zeppelin.scheduler.FIFOScheduler$1.run(FIFOScheduler.java:140)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.spark.sql.AnalysisException: Table or view not found: fifa; line 1 pos 14
+	at org.apache.spark.sql.catalyst.analysis.package$AnalysisErrorAt.failAnalysis(package.scala:42)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer$ResolveRelations$.org$apache$spark$sql$catalyst$analysis$Analyzer$ResolveRelations$$lookupTableFromCatalog(Analyzer.scala:649)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer$ResolveRelations$.resolveRelation(Analyzer.scala:601)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer$ResolveRelations$$anonfun$apply$8.applyOrElse(Analyzer.scala:631)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer$ResolveRelations$$anonfun$apply$8.applyOrElse(Analyzer.scala:624)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan$$anonfun$resolveOperators$1.apply(LogicalPlan.scala:62)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan$$anonfun$resolveOperators$1.apply(LogicalPlan.scala:62)
+	at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(TreeNode.scala:70)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.resolveOperators(LogicalPlan.scala:61)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan$$anonfun$1.apply(LogicalPlan.scala:59)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan$$anonfun$1.apply(LogicalPlan.scala:59)
+	at org.apache.spark.sql.catalyst.trees.TreeNode$$anonfun$4.apply(TreeNode.scala:306)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.mapProductIterator(TreeNode.scala:187)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.mapChildren(TreeNode.scala:304)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.resolveOperators(LogicalPlan.scala:59)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan$$anonfun$1.apply(LogicalPlan.scala:59)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan$$anonfun$1.apply(LogicalPlan.scala:59)
+	at org.apache.spark.sql.catalyst.trees.TreeNode$$anonfun$4.apply(TreeNode.scala:306)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.mapProductIterator(TreeNode.scala:187)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.mapChildren(TreeNode.scala:304)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.resolveOperators(LogicalPlan.scala:59)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan$$anonfun$1.apply(LogicalPlan.scala:59)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan$$anonfun$1.apply(LogicalPlan.scala:59)
+	at org.apache.spark.sql.catalyst.trees.TreeNode$$anonfun$4.apply(TreeNode.scala:306)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.mapProductIterator(TreeNode.scala:187)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.mapChildren(TreeNode.scala:304)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.resolveOperators(LogicalPlan.scala:59)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer$ResolveRelations$.apply(Analyzer.scala:624)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer$ResolveRelations$.apply(Analyzer.scala:570)
+	at org.apache.spark.sql.catalyst.rules.RuleExecutor$$anonfun$execute$1$$anonfun$apply$1.apply(RuleExecutor.scala:85)
+	at org.apache.spark.sql.catalyst.rules.RuleExecutor$$anonfun$execute$1$$anonfun$apply$1.apply(RuleExecutor.scala:82)
+	at scala.collection.LinearSeqOptimized$class.foldLeft(LinearSeqOptimized.scala:124)
+	at scala.collection.immutable.List.foldLeft(List.scala:84)
+	at org.apache.spark.sql.catalyst.rules.RuleExecutor$$anonfun$execute$1.apply(RuleExecutor.scala:82)
+	at org.apache.spark.sql.catalyst.rules.RuleExecutor$$anonfun$execute$1.apply(RuleExecutor.scala:74)
+	at scala.collection.immutable.List.foreach(List.scala:381)
+	at org.apache.spark.sql.catalyst.rules.RuleExecutor.execute(RuleExecutor.scala:74)
+	at org.apache.spark.sql.execution.QueryExecution.analyzed$lzycompute(QueryExecution.scala:69)
+	at org.apache.spark.sql.execution.QueryExecution.analyzed(QueryExecution.scala:67)
+	at org.apache.spark.sql.execution.QueryExecution.assertAnalyzed(QueryExecution.scala:50)
+	at org.apache.spark.sql.Dataset$.ofRows(Dataset.scala:67)
+	at org.apache.spark.sql.SparkSession.sql(SparkSession.scala:632)
+	at org.apache.spark.sql.SQLContext.sql(SQLContext.scala:691)
+	... 16 more
+ INFO [2020-10-02 18:50:59,580] ({pool-2-thread-8} SchedulerFactory.java[jobFinished]:120) - Job 20200212-212817_29379565 finished by scheduler interpreter_211172211
+ INFO [2020-10-02 18:51:01,455] ({pool-2-thread-12} SchedulerFactory.java[jobStarted]:114) - Job 20200212-212807_1745051934 started by scheduler interpreter_211172211
+ INFO [2020-10-02 18:51:01,481] ({pool-2-thread-12} Logging.scala[logInfo]:54) - Parsing command: desc fifa
+ERROR [2020-10-02 18:51:01,560] ({pool-2-thread-12} SparkSqlInterpreter.java[interpret]:126) - Invocation target exception
+java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.zeppelin.spark.SparkSqlInterpreter.interpret(SparkSqlInterpreter.java:121)
+	at org.apache.zeppelin.interpreter.LazyOpenInterpreter.interpret(LazyOpenInterpreter.java:103)
+	at org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:632)
+	at org.apache.zeppelin.scheduler.Job.run(Job.java:188)
+	at org.apache.zeppelin.scheduler.FIFOScheduler$1.run(FIFOScheduler.java:140)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.spark.sql.catalyst.analysis.NoSuchTableException: Table or view 'fifa' not found in database 'default';
+	at org.apache.spark.sql.catalyst.catalog.SessionCatalog.requireTableExists(SessionCatalog.scala:180)
+	at org.apache.spark.sql.catalyst.catalog.SessionCatalog.getTableMetadata(SessionCatalog.scala:396)
+	at org.apache.spark.sql.execution.command.DescribeTableCommand.run(tables.scala:521)
+	at org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult$lzycompute(commands.scala:58)
+	at org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult(commands.scala:56)
+	at org.apache.spark.sql.execution.command.ExecutedCommandExec.executeCollect(commands.scala:67)
+	at org.apache.spark.sql.Dataset.<init>(Dataset.scala:183)
+	at org.apache.spark.sql.Dataset$.ofRows(Dataset.scala:68)
+	at org.apache.spark.sql.SparkSession.sql(SparkSession.scala:632)
+	at org.apache.spark.sql.SQLContext.sql(SQLContext.scala:691)
+	... 16 more
+ INFO [2020-10-02 18:51:01,577] ({pool-2-thread-12} SchedulerFactory.java[jobFinished]:120) - Job 20200212-212807_1745051934 finished by scheduler interpreter_211172211
+ INFO [2020-10-02 18:51:04,119] ({pool-2-thread-5} SchedulerFactory.java[jobStarted]:114) - Job 20200212-212541_1942445487 started by scheduler interpreter_211172211
+ INFO [2020-10-02 18:51:04,161] ({pool-2-thread-5} Logging.scala[logInfo]:54) - Parsing command: select age,overall from fifa
+ERROR [2020-10-02 18:51:04,178] ({pool-2-thread-5} SparkSqlInterpreter.java[interpret]:126) - Invocation target exception
+java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.zeppelin.spark.SparkSqlInterpreter.interpret(SparkSqlInterpreter.java:121)
+	at org.apache.zeppelin.interpreter.LazyOpenInterpreter.interpret(LazyOpenInterpreter.java:103)
+	at org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:632)
+	at org.apache.zeppelin.scheduler.Job.run(Job.java:188)
+	at org.apache.zeppelin.scheduler.FIFOScheduler$1.run(FIFOScheduler.java:140)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.spark.sql.AnalysisException: Table or view not found: fifa; line 1 pos 24
+	at org.apache.spark.sql.catalyst.analysis.package$AnalysisErrorAt.failAnalysis(package.scala:42)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer$ResolveRelations$.org$apache$spark$sql$catalyst$analysis$Analyzer$ResolveRelations$$lookupTableFromCatalog(Analyzer.scala:649)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer$ResolveRelations$.resolveRelation(Analyzer.scala:601)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer$ResolveRelations$$anonfun$apply$8.applyOrElse(Analyzer.scala:631)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer$ResolveRelations$$anonfun$apply$8.applyOrElse(Analyzer.scala:624)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan$$anonfun$resolveOperators$1.apply(LogicalPlan.scala:62)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan$$anonfun$resolveOperators$1.apply(LogicalPlan.scala:62)
+	at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(TreeNode.scala:70)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.resolveOperators(LogicalPlan.scala:61)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan$$anonfun$1.apply(LogicalPlan.scala:59)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan$$anonfun$1.apply(LogicalPlan.scala:59)
+	at org.apache.spark.sql.catalyst.trees.TreeNode$$anonfun$4.apply(TreeNode.scala:306)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.mapProductIterator(TreeNode.scala:187)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.mapChildren(TreeNode.scala:304)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.resolveOperators(LogicalPlan.scala:59)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer$ResolveRelations$.apply(Analyzer.scala:624)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer$ResolveRelations$.apply(Analyzer.scala:570)
+	at org.apache.spark.sql.catalyst.rules.RuleExecutor$$anonfun$execute$1$$anonfun$apply$1.apply(RuleExecutor.scala:85)
+	at org.apache.spark.sql.catalyst.rules.RuleExecutor$$anonfun$execute$1$$anonfun$apply$1.apply(RuleExecutor.scala:82)
+	at scala.collection.LinearSeqOptimized$class.foldLeft(LinearSeqOptimized.scala:124)
+	at scala.collection.immutable.List.foldLeft(List.scala:84)
+	at org.apache.spark.sql.catalyst.rules.RuleExecutor$$anonfun$execute$1.apply(RuleExecutor.scala:82)
+	at org.apache.spark.sql.catalyst.rules.RuleExecutor$$anonfun$execute$1.apply(RuleExecutor.scala:74)
+	at scala.collection.immutable.List.foreach(List.scala:381)
+	at org.apache.spark.sql.catalyst.rules.RuleExecutor.execute(RuleExecutor.scala:74)
+	at org.apache.spark.sql.execution.QueryExecution.analyzed$lzycompute(QueryExecution.scala:69)
+	at org.apache.spark.sql.execution.QueryExecution.analyzed(QueryExecution.scala:67)
+	at org.apache.spark.sql.execution.QueryExecution.assertAnalyzed(QueryExecution.scala:50)
+	at org.apache.spark.sql.Dataset$.ofRows(Dataset.scala:67)
+	at org.apache.spark.sql.SparkSession.sql(SparkSession.scala:632)
+	at org.apache.spark.sql.SQLContext.sql(SQLContext.scala:691)
+	... 16 more
+ INFO [2020-10-02 18:51:04,196] ({pool-2-thread-5} SchedulerFactory.java[jobFinished]:120) - Job 20200212-212541_1942445487 finished by scheduler interpreter_211172211
+ INFO [2020-10-02 18:51:34,017] ({Thread-5} Logging.scala[logInfo]:54) - Invoking stop() from shutdown hook
+ INFO [2020-10-02 18:51:34,212] ({Thread-5} AbstractConnector.java[doStop]:310) - Stopped Spark@4c782881{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+ INFO [2020-10-02 18:51:34,264] ({Thread-5} Logging.scala[logInfo]:54) - Stopped Spark web UI at http://172.17.0.2:4040
+ INFO [2020-10-02 18:51:34,409] ({pool-2-thread-13} SchedulerFactory.java[jobStarted]:114) - Job 20200212-213634_1744936228 started by scheduler interpreter_211172211
+ INFO [2020-10-02 18:51:34,608] ({pool-2-thread-13} Logging.scala[logInfo]:54) - Parsing command: select nationality,overall,count(*) from fifa group by nationality,overall
+ INFO [2020-10-02 18:51:35,271] ({dispatcher-event-loop-1} Logging.scala[logInfo]:54) - MapOutputTrackerMasterEndpoint stopped!
+ERROR [2020-10-02 18:51:36,150] ({pool-2-thread-13} SparkSqlInterpreter.java[interpret]:126) - Invocation target exception
+java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.zeppelin.spark.SparkSqlInterpreter.interpret(SparkSqlInterpreter.java:121)
+	at org.apache.zeppelin.interpreter.LazyOpenInterpreter.interpret(LazyOpenInterpreter.java:103)
+	at org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:632)
+	at org.apache.zeppelin.scheduler.Job.run(Job.java:188)
+	at org.apache.zeppelin.scheduler.FIFOScheduler$1.run(FIFOScheduler.java:140)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.spark.sql.AnalysisException: Table or view not found: fifa; line 1 pos 41
+	at org.apache.spark.sql.catalyst.analysis.package$AnalysisErrorAt.failAnalysis(package.scala:42)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer$ResolveRelations$.org$apache$spark$sql$catalyst$analysis$Analyzer$ResolveRelations$$lookupTableFromCatalog(Analyzer.scala:649)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer$ResolveRelations$.resolveRelation(Analyzer.scala:601)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer$ResolveRelations$$anonfun$apply$8.applyOrElse(Analyzer.scala:631)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer$ResolveRelations$$anonfun$apply$8.applyOrElse(Analyzer.scala:624)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan$$anonfun$resolveOperators$1.apply(LogicalPlan.scala:62)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan$$anonfun$resolveOperators$1.apply(LogicalPlan.scala:62)
+	at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(TreeNode.scala:70)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.resolveOperators(LogicalPlan.scala:61)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan$$anonfun$1.apply(LogicalPlan.scala:59)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan$$anonfun$1.apply(LogicalPlan.scala:59)
+	at org.apache.spark.sql.catalyst.trees.TreeNode$$anonfun$4.apply(TreeNode.scala:306)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.mapProductIterator(TreeNode.scala:187)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.mapChildren(TreeNode.scala:304)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.resolveOperators(LogicalPlan.scala:59)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer$ResolveRelations$.apply(Analyzer.scala:624)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer$ResolveRelations$.apply(Analyzer.scala:570)
+	at org.apache.spark.sql.catalyst.rules.RuleExecutor$$anonfun$execute$1$$anonfun$apply$1.apply(RuleExecutor.scala:85)
+	at org.apache.spark.sql.catalyst.rules.RuleExecutor$$anonfun$execute$1$$anonfun$apply$1.apply(RuleExecutor.scala:82)
+	at scala.collection.LinearSeqOptimized$class.foldLeft(LinearSeqOptimized.scala:124)
+	at scala.collection.immutable.List.foldLeft(List.scala:84)
+	at org.apache.spark.sql.catalyst.rules.RuleExecutor$$anonfun$execute$1.apply(RuleExecutor.scala:82)
+	at org.apache.spark.sql.catalyst.rules.RuleExecutor$$anonfun$execute$1.apply(RuleExecutor.scala:74)
+	at scala.collection.immutable.List.foreach(List.scala:381)
+	at org.apache.spark.sql.catalyst.rules.RuleExecutor.execute(RuleExecutor.scala:74)
+	at org.apache.spark.sql.execution.QueryExecution.analyzed$lzycompute(QueryExecution.scala:69)
+	at org.apache.spark.sql.execution.QueryExecution.analyzed(QueryExecution.scala:67)
+	at org.apache.spark.sql.execution.QueryExecution.assertAnalyzed(QueryExecution.scala:50)
+	at org.apache.spark.sql.Dataset$.ofRows(Dataset.scala:67)
+	at org.apache.spark.sql.SparkSession.sql(SparkSession.scala:632)
+	at org.apache.spark.sql.SQLContext.sql(SQLContext.scala:691)
+	... 16 more
+ INFO [2020-10-02 18:51:36,172] ({pool-2-thread-13} SchedulerFactory.java[jobFinished]:120) - Job 20200212-213634_1744936228 finished by scheduler interpreter_211172211
+ INFO [2020-10-02 18:51:36,210] ({pool-2-thread-9} SchedulerFactory.java[jobStarted]:114) - Job 20200212-213634_1744936228 started by scheduler interpreter_211172211
+ INFO [2020-10-02 18:51:36,246] ({pool-2-thread-9} Logging.scala[logInfo]:54) - Parsing command: select nationality,overall,count(*) from fifa group by nationality,overall
+ INFO [2020-10-02 18:51:36,298] ({Thread-5} Logging.scala[logInfo]:54) - MemoryStore cleared
+ INFO [2020-10-02 18:51:36,308] ({Thread-5} Logging.scala[logInfo]:54) - BlockManager stopped
+ INFO [2020-10-02 18:51:36,363] ({Thread-5} Logging.scala[logInfo]:54) - BlockManagerMaster stopped
+ERROR [2020-10-02 18:51:36,417] ({pool-2-thread-9} SparkSqlInterpreter.java[interpret]:126) - Invocation target exception
+java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.zeppelin.spark.SparkSqlInterpreter.interpret(SparkSqlInterpreter.java:121)
+	at org.apache.zeppelin.interpreter.LazyOpenInterpreter.interpret(LazyOpenInterpreter.java:103)
+	at org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:632)
+	at org.apache.zeppelin.scheduler.Job.run(Job.java:188)
+	at org.apache.zeppelin.scheduler.FIFOScheduler$1.run(FIFOScheduler.java:140)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.spark.sql.AnalysisException: Table or view not found: fifa; line 1 pos 41
+	at org.apache.spark.sql.catalyst.analysis.package$AnalysisErrorAt.failAnalysis(package.scala:42)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer$ResolveRelations$.org$apache$spark$sql$catalyst$analysis$Analyzer$ResolveRelations$$lookupTableFromCatalog(Analyzer.scala:649)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer$ResolveRelations$.resolveRelation(Analyzer.scala:601)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer$ResolveRelations$$anonfun$apply$8.applyOrElse(Analyzer.scala:631)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer$ResolveRelations$$anonfun$apply$8.applyOrElse(Analyzer.scala:624)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan$$anonfun$resolveOperators$1.apply(LogicalPlan.scala:62)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan$$anonfun$resolveOperators$1.apply(LogicalPlan.scala:62)
+	at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(TreeNode.scala:70)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.resolveOperators(LogicalPlan.scala:61)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan$$anonfun$1.apply(LogicalPlan.scala:59)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan$$anonfun$1.apply(LogicalPlan.scala:59)
+	at org.apache.spark.sql.catalyst.trees.TreeNode$$anonfun$4.apply(TreeNode.scala:306)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.mapProductIterator(TreeNode.scala:187)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.mapChildren(TreeNode.scala:304)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.resolveOperators(LogicalPlan.scala:59)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer$ResolveRelations$.apply(Analyzer.scala:624)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer$ResolveRelations$.apply(Analyzer.scala:570)
+	at org.apache.spark.sql.catalyst.rules.RuleExecutor$$anonfun$execute$1$$anonfun$apply$1.apply(RuleExecutor.scala:85)
+	at org.apache.spark.sql.catalyst.rules.RuleExecutor$$anonfun$execute$1$$anonfun$apply$1.apply(RuleExecutor.scala:82)
+	at scala.collection.LinearSeqOptimized$class.foldLeft(LinearSeqOptimized.scala:124)
+	at scala.collection.immutable.List.foldLeft(List.scala:84)
+	at org.apache.spark.sql.catalyst.rules.RuleExecutor$$anonfun$execute$1.apply(RuleExecutor.scala:82)
+	at org.apache.spark.sql.catalyst.rules.RuleExecutor$$anonfun$execute$1.apply(RuleExecutor.scala:74)
+	at scala.collection.immutable.List.foreach(List.scala:381)
+	at org.apache.spark.sql.catalyst.rules.RuleExecutor.execute(RuleExecutor.scala:74)
+	at org.apache.spark.sql.execution.QueryExecution.analyzed$lzycompute(QueryExecution.scala:69)
+	at org.apache.spark.sql.execution.QueryExecution.analyzed(QueryExecution.scala:67)
+	at org.apache.spark.sql.execution.QueryExecution.assertAnalyzed(QueryExecution.scala:50)
+	at org.apache.spark.sql.Dataset$.ofRows(Dataset.scala:67)
+	at org.apache.spark.sql.SparkSession.sql(SparkSession.scala:632)
+	at org.apache.spark.sql.SQLContext.sql(SQLContext.scala:691)
+	... 16 more
+ INFO [2020-10-02 18:51:36,444] ({pool-2-thread-9} SchedulerFactory.java[jobFinished]:120) - Job 20200212-213634_1744936228 finished by scheduler interpreter_211172211
+ INFO [2020-10-02 18:51:36,490] ({dispatcher-event-loop-0} Logging.scala[logInfo]:54) - OutputCommitCoordinator stopped!
+ INFO [2020-10-02 18:51:36,626] ({Thread-5} Logging.scala[logInfo]:54) - Successfully stopped SparkContext
+ INFO [2020-10-02 18:51:36,631] ({Thread-5} Logging.scala[logInfo]:54) - Shutdown hook called
+ INFO [2020-10-02 18:51:36,637] ({Thread-5} Logging.scala[logInfo]:54) - Deleting directory /tmp/spark-c3938d48-1d2e-472c-956a-9274101e57e7

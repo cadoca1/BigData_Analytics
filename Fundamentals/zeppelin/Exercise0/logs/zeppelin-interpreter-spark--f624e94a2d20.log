@@ -1,0 +1,95 @@
+ WARN [2020-10-03 07:00:52,836] ({dispatcher-event-loop-1} Logging.scala[logWarning]:66) - Removing executor driver with no recent heartbeats: 43168963 ms exceeds timeout 120000 ms
+ERROR [2020-10-03 07:00:54,114] ({dispatcher-event-loop-1} Logging.scala[logError]:70) - Lost executor driver on localhost: Executor heartbeat timed out after 43168963 ms
+ INFO [2020-10-03 07:00:54,277] ({dag-scheduler-event-loop} Logging.scala[logInfo]:54) - Executor lost: driver (epoch 0)
+ INFO [2020-10-03 07:00:54,278] ({driver-heartbeater} Logging.scala[logInfo]:54) - Told to re-register on heartbeat
+ INFO [2020-10-03 07:00:54,336] ({dispatcher-event-loop-1} Logging.scala[logInfo]:54) - Trying to remove executor driver from BlockManagerMaster.
+ INFO [2020-10-03 07:00:54,336] ({driver-heartbeater} Logging.scala[logInfo]:54) - BlockManager BlockManagerId(driver, 172.17.0.2, 38171, None) re-registering with master
+ INFO [2020-10-03 07:00:54,430] ({driver-heartbeater} Logging.scala[logInfo]:54) - Registering BlockManager BlockManagerId(driver, 172.17.0.2, 38171, None)
+ WARN [2020-10-03 07:00:54,468] ({dispatcher-event-loop-1} Logging.scala[logWarning]:66) - No more replicas available for broadcast_4_piece0 !
+ WARN [2020-10-03 07:00:54,499] ({dispatcher-event-loop-1} Logging.scala[logWarning]:66) - No more replicas available for broadcast_6_piece0 !
+ WARN [2020-10-03 07:00:54,509] ({dispatcher-event-loop-1} Logging.scala[logWarning]:66) - No more replicas available for broadcast_3_piece0 !
+ WARN [2020-10-03 07:00:54,513] ({dispatcher-event-loop-1} Logging.scala[logWarning]:66) - No more replicas available for broadcast_7_piece0 !
+ WARN [2020-10-03 07:00:54,519] ({dispatcher-event-loop-1} Logging.scala[logWarning]:66) - No more replicas available for broadcast_2_piece0 !
+ WARN [2020-10-03 07:00:54,544] ({kill-executor-thread} Logging.scala[logWarning]:66) - Killing executors is only supported in coarse-grained mode
+ INFO [2020-10-03 07:00:54,550] ({dispatcher-event-loop-1} Logging.scala[logInfo]:54) - Removing block manager BlockManagerId(driver, 172.17.0.2, 38171, None)
+ INFO [2020-10-03 07:00:54,580] ({dag-scheduler-event-loop} Logging.scala[logInfo]:54) - Removed driver successfully in removeExecutor
+ INFO [2020-10-03 07:00:54,677] ({dispatcher-event-loop-1} Logging.scala[logInfo]:54) - Registering block manager 172.17.0.2:38171 with 408.9 MB RAM, BlockManagerId(driver, 172.17.0.2, 38171, None)
+ INFO [2020-10-03 07:00:54,684] ({dag-scheduler-event-loop} Logging.scala[logInfo]:54) - Shuffle files lost for executor: driver (epoch 0)
+ INFO [2020-10-03 07:00:54,692] ({driver-heartbeater} Logging.scala[logInfo]:54) - Registered BlockManager BlockManagerId(driver, 172.17.0.2, 38171, None)
+ INFO [2020-10-03 07:00:54,700] ({driver-heartbeater} Logging.scala[logInfo]:54) - Reporting 10 blocks to the master.
+ INFO [2020-10-03 07:00:54,757] ({dag-scheduler-event-loop} Logging.scala[logInfo]:54) - Host added was in lost list earlier: localhost
+ INFO [2020-10-03 07:00:54,764] ({dispatcher-event-loop-0} Logging.scala[logInfo]:54) - Added broadcast_4_piece0 in memory on 172.17.0.2:38171 (size: 24.2 KB, free: 408.9 MB)
+ INFO [2020-10-03 07:00:54,773] ({dispatcher-event-loop-1} Logging.scala[logInfo]:54) - Added broadcast_3_piece0 in memory on 172.17.0.2:38171 (size: 7.0 KB, free: 408.9 MB)
+ INFO [2020-10-03 07:00:54,782] ({dispatcher-event-loop-0} Logging.scala[logInfo]:54) - Added broadcast_7_piece0 in memory on 172.17.0.2:38171 (size: 7.2 KB, free: 408.9 MB)
+ INFO [2020-10-03 07:00:54,796] ({dispatcher-event-loop-1} Logging.scala[logInfo]:54) - Added broadcast_2_piece0 in memory on 172.17.0.2:38171 (size: 24.2 KB, free: 408.8 MB)
+ INFO [2020-10-03 07:00:54,811] ({dispatcher-event-loop-1} Logging.scala[logInfo]:54) - Added broadcast_6_piece0 in memory on 172.17.0.2:38171 (size: 24.2 KB, free: 408.8 MB)
+ INFO [2020-10-03 07:00:54,821] ({driver-heartbeater} Logging.scala[logInfo]:54) - Told to re-register on heartbeat
+ INFO [2020-10-03 07:00:54,824] ({driver-heartbeater} Logging.scala[logInfo]:54) - BlockManager BlockManagerId(driver, 172.17.0.2, 38171, None) re-registering with master
+ INFO [2020-10-03 07:00:54,826] ({driver-heartbeater} Logging.scala[logInfo]:54) - Registering BlockManager BlockManagerId(driver, 172.17.0.2, 38171, None)
+ INFO [2020-10-03 07:00:54,831] ({driver-heartbeater} Logging.scala[logInfo]:54) - Registered BlockManager BlockManagerId(driver, 172.17.0.2, 38171, None)
+ INFO [2020-10-03 07:00:54,834] ({driver-heartbeater} Logging.scala[logInfo]:54) - Reporting 10 blocks to the master.
+ INFO [2020-10-03 07:00:54,845] ({dispatcher-event-loop-0} Logging.scala[logInfo]:54) - Updated broadcast_4_piece0 in memory on 172.17.0.2:38171 (current size: 24.2 KB, original size: 24.2 KB, free: 408.8 MB)
+ INFO [2020-10-03 07:00:54,854] ({dispatcher-event-loop-0} Logging.scala[logInfo]:54) - Updated broadcast_3_piece0 in memory on 172.17.0.2:38171 (current size: 7.0 KB, original size: 7.0 KB, free: 408.8 MB)
+ INFO [2020-10-03 07:00:54,864] ({dispatcher-event-loop-1} Logging.scala[logInfo]:54) - Updated broadcast_7_piece0 in memory on 172.17.0.2:38171 (current size: 7.2 KB, original size: 7.2 KB, free: 408.8 MB)
+ INFO [2020-10-03 07:00:54,876] ({dispatcher-event-loop-0} Logging.scala[logInfo]:54) - Updated broadcast_2_piece0 in memory on 172.17.0.2:38171 (current size: 24.2 KB, original size: 24.2 KB, free: 408.8 MB)
+ INFO [2020-10-03 07:00:54,889] ({dispatcher-event-loop-0} Logging.scala[logInfo]:54) - Updated broadcast_6_piece0 in memory on 172.17.0.2:38171 (current size: 24.2 KB, original size: 24.2 KB, free: 408.8 MB)
+ INFO [2020-10-03 07:00:54,894] ({driver-heartbeater} Logging.scala[logInfo]:54) - Told to re-register on heartbeat
+ INFO [2020-10-03 07:00:54,896] ({driver-heartbeater} Logging.scala[logInfo]:54) - BlockManager BlockManagerId(driver, 172.17.0.2, 38171, None) re-registering with master
+ INFO [2020-10-03 07:00:54,898] ({driver-heartbeater} Logging.scala[logInfo]:54) - Registering BlockManager BlockManagerId(driver, 172.17.0.2, 38171, None)
+ INFO [2020-10-03 07:00:54,908] ({driver-heartbeater} Logging.scala[logInfo]:54) - Registered BlockManager BlockManagerId(driver, 172.17.0.2, 38171, None)
+ INFO [2020-10-03 07:00:54,910] ({driver-heartbeater} Logging.scala[logInfo]:54) - Reporting 10 blocks to the master.
+ INFO [2020-10-03 07:00:54,914] ({dispatcher-event-loop-1} Logging.scala[logInfo]:54) - Updated broadcast_4_piece0 in memory on 172.17.0.2:38171 (current size: 24.2 KB, original size: 24.2 KB, free: 408.8 MB)
+ INFO [2020-10-03 07:00:54,928] ({dispatcher-event-loop-0} Logging.scala[logInfo]:54) - Updated broadcast_3_piece0 in memory on 172.17.0.2:38171 (current size: 7.0 KB, original size: 7.0 KB, free: 408.8 MB)
+ INFO [2020-10-03 07:00:54,934] ({dispatcher-event-loop-1} Logging.scala[logInfo]:54) - Updated broadcast_7_piece0 in memory on 172.17.0.2:38171 (current size: 7.2 KB, original size: 7.2 KB, free: 408.8 MB)
+ INFO [2020-10-03 07:00:54,943] ({dispatcher-event-loop-0} Logging.scala[logInfo]:54) - Updated broadcast_2_piece0 in memory on 172.17.0.2:38171 (current size: 24.2 KB, original size: 24.2 KB, free: 408.8 MB)
+ INFO [2020-10-03 07:00:54,949] ({dispatcher-event-loop-1} Logging.scala[logInfo]:54) - Updated broadcast_6_piece0 in memory on 172.17.0.2:38171 (current size: 24.2 KB, original size: 24.2 KB, free: 408.8 MB)
+ INFO [2020-10-03 07:00:54,960] ({driver-heartbeater} Logging.scala[logInfo]:54) - Told to re-register on heartbeat
+ INFO [2020-10-03 07:00:54,965] ({driver-heartbeater} Logging.scala[logInfo]:54) - BlockManager BlockManagerId(driver, 172.17.0.2, 38171, None) re-registering with master
+ INFO [2020-10-03 07:00:54,975] ({driver-heartbeater} Logging.scala[logInfo]:54) - Registering BlockManager BlockManagerId(driver, 172.17.0.2, 38171, None)
+ INFO [2020-10-03 07:00:54,984] ({driver-heartbeater} Logging.scala[logInfo]:54) - Registered BlockManager BlockManagerId(driver, 172.17.0.2, 38171, None)
+ INFO [2020-10-03 07:00:54,987] ({driver-heartbeater} Logging.scala[logInfo]:54) - Reporting 10 blocks to the master.
+ INFO [2020-10-03 07:00:54,995] ({dispatcher-event-loop-0} Logging.scala[logInfo]:54) - Updated broadcast_4_piece0 in memory on 172.17.0.2:38171 (current size: 24.2 KB, original size: 24.2 KB, free: 408.8 MB)
+ INFO [2020-10-03 07:00:55,001] ({dispatcher-event-loop-1} Logging.scala[logInfo]:54) - Updated broadcast_3_piece0 in memory on 172.17.0.2:38171 (current size: 7.0 KB, original size: 7.0 KB, free: 408.8 MB)
+ INFO [2020-10-03 07:00:55,015] ({dispatcher-event-loop-0} Logging.scala[logInfo]:54) - Updated broadcast_7_piece0 in memory on 172.17.0.2:38171 (current size: 7.2 KB, original size: 7.2 KB, free: 408.8 MB)
+ INFO [2020-10-03 07:00:55,024] ({dispatcher-event-loop-1} Logging.scala[logInfo]:54) - Updated broadcast_2_piece0 in memory on 172.17.0.2:38171 (current size: 24.2 KB, original size: 24.2 KB, free: 408.8 MB)
+ INFO [2020-10-03 07:00:55,028] ({dispatcher-event-loop-0} Logging.scala[logInfo]:54) - Updated broadcast_6_piece0 in memory on 172.17.0.2:38171 (current size: 24.2 KB, original size: 24.2 KB, free: 408.8 MB)
+ INFO [2020-10-03 07:01:00,652] ({driver-heartbeater} Logging.scala[logInfo]:54) - Told to re-register on heartbeat
+ INFO [2020-10-03 07:01:00,687] ({driver-heartbeater} Logging.scala[logInfo]:54) - BlockManager BlockManagerId(driver, 172.17.0.2, 38171, None) re-registering with master
+ INFO [2020-10-03 07:01:00,694] ({driver-heartbeater} Logging.scala[logInfo]:54) - Registering BlockManager BlockManagerId(driver, 172.17.0.2, 38171, None)
+ INFO [2020-10-03 07:01:00,705] ({driver-heartbeater} Logging.scala[logInfo]:54) - Registered BlockManager BlockManagerId(driver, 172.17.0.2, 38171, None)
+ INFO [2020-10-03 07:01:00,710] ({driver-heartbeater} Logging.scala[logInfo]:54) - Reporting 10 blocks to the master.
+ INFO [2020-10-03 07:01:00,760] ({dispatcher-event-loop-1} Logging.scala[logInfo]:54) - Updated broadcast_4_piece0 in memory on 172.17.0.2:38171 (current size: 24.2 KB, original size: 24.2 KB, free: 408.8 MB)
+ INFO [2020-10-03 07:01:00,779] ({dispatcher-event-loop-0} Logging.scala[logInfo]:54) - Updated broadcast_3_piece0 in memory on 172.17.0.2:38171 (current size: 7.0 KB, original size: 7.0 KB, free: 408.8 MB)
+ INFO [2020-10-03 07:01:00,973] ({dispatcher-event-loop-1} Logging.scala[logInfo]:54) - Updated broadcast_7_piece0 in memory on 172.17.0.2:38171 (current size: 7.2 KB, original size: 7.2 KB, free: 408.8 MB)
+ INFO [2020-10-03 07:01:01,125] ({dispatcher-event-loop-0} Logging.scala[logInfo]:54) - Updated broadcast_2_piece0 in memory on 172.17.0.2:38171 (current size: 24.2 KB, original size: 24.2 KB, free: 408.8 MB)
+ INFO [2020-10-03 07:01:01,131] ({dispatcher-event-loop-1} Logging.scala[logInfo]:54) - Updated broadcast_6_piece0 in memory on 172.17.0.2:38171 (current size: 24.2 KB, original size: 24.2 KB, free: 408.8 MB)
+ INFO [2020-10-03 07:01:15,760] ({driver-heartbeater} Logging.scala[logInfo]:54) - Told to re-register on heartbeat
+ INFO [2020-10-03 07:01:16,981] ({driver-heartbeater} Logging.scala[logInfo]:54) - BlockManager BlockManagerId(driver, 172.17.0.2, 38171, None) re-registering with master
+ INFO [2020-10-03 07:01:20,290] ({driver-heartbeater} Logging.scala[logInfo]:54) - Registering BlockManager BlockManagerId(driver, 172.17.0.2, 38171, None)
+ INFO [2020-10-03 07:01:12,508] ({driver-heartbeater} Logging.scala[logInfo]:54) - Registered BlockManager BlockManagerId(driver, 172.17.0.2, 38171, None)
+ INFO [2020-10-03 07:01:13,332] ({driver-heartbeater} Logging.scala[logInfo]:54) - Reporting 10 blocks to the master.
+ INFO [2020-10-03 07:01:13,906] ({dispatcher-event-loop-0} Logging.scala[logInfo]:54) - Updated broadcast_4_piece0 in memory on 172.17.0.2:38171 (current size: 24.2 KB, original size: 24.2 KB, free: 408.8 MB)
+ INFO [2020-10-03 07:01:13,948] ({dispatcher-event-loop-0} Logging.scala[logInfo]:54) - Updated broadcast_3_piece0 in memory on 172.17.0.2:38171 (current size: 7.0 KB, original size: 7.0 KB, free: 408.8 MB)
+ INFO [2020-10-03 07:01:14,698] ({dispatcher-event-loop-1} Logging.scala[logInfo]:54) - Updated broadcast_7_piece0 in memory on 172.17.0.2:38171 (current size: 7.2 KB, original size: 7.2 KB, free: 408.8 MB)
+ INFO [2020-10-03 07:01:14,765] ({dispatcher-event-loop-0} Logging.scala[logInfo]:54) - Updated broadcast_2_piece0 in memory on 172.17.0.2:38171 (current size: 24.2 KB, original size: 24.2 KB, free: 408.8 MB)
+ INFO [2020-10-03 07:01:15,014] ({dispatcher-event-loop-0} Logging.scala[logInfo]:54) - Updated broadcast_6_piece0 in memory on 172.17.0.2:38171 (current size: 24.2 KB, original size: 24.2 KB, free: 408.8 MB)
+ INFO [2020-10-03 07:01:15,399] ({driver-heartbeater} Logging.scala[logInfo]:54) - Told to re-register on heartbeat
+ INFO [2020-10-03 07:01:15,675] ({driver-heartbeater} Logging.scala[logInfo]:54) - BlockManager BlockManagerId(driver, 172.17.0.2, 38171, None) re-registering with master
+ INFO [2020-10-03 07:01:15,850] ({driver-heartbeater} Logging.scala[logInfo]:54) - Registering BlockManager BlockManagerId(driver, 172.17.0.2, 38171, None)
+ INFO [2020-10-03 07:01:15,929] ({driver-heartbeater} Logging.scala[logInfo]:54) - Registered BlockManager BlockManagerId(driver, 172.17.0.2, 38171, None)
+ INFO [2020-10-03 07:01:15,945] ({driver-heartbeater} Logging.scala[logInfo]:54) - Reporting 10 blocks to the master.
+ INFO [2020-10-03 07:01:16,301] ({dispatcher-event-loop-1} Logging.scala[logInfo]:54) - Updated broadcast_4_piece0 in memory on 172.17.0.2:38171 (current size: 24.2 KB, original size: 24.2 KB, free: 408.8 MB)
+ INFO [2020-10-03 07:01:16,356] ({dispatcher-event-loop-0} Logging.scala[logInfo]:54) - Updated broadcast_3_piece0 in memory on 172.17.0.2:38171 (current size: 7.0 KB, original size: 7.0 KB, free: 408.8 MB)
+ INFO [2020-10-03 07:01:16,598] ({dispatcher-event-loop-1} Logging.scala[logInfo]:54) - Updated broadcast_7_piece0 in memory on 172.17.0.2:38171 (current size: 7.2 KB, original size: 7.2 KB, free: 408.8 MB)
+ INFO [2020-10-03 07:01:16,640] ({dispatcher-event-loop-1} Logging.scala[logInfo]:54) - Updated broadcast_2_piece0 in memory on 172.17.0.2:38171 (current size: 24.2 KB, original size: 24.2 KB, free: 408.8 MB)
+ INFO [2020-10-03 07:01:16,839] ({dispatcher-event-loop-1} Logging.scala[logInfo]:54) - Updated broadcast_6_piece0 in memory on 172.17.0.2:38171 (current size: 24.2 KB, original size: 24.2 KB, free: 408.8 MB)
+ INFO [2020-10-03 07:01:18,422] ({driver-heartbeater} Logging.scala[logInfo]:54) - Told to re-register on heartbeat
+ INFO [2020-10-03 07:01:18,446] ({driver-heartbeater} Logging.scala[logInfo]:54) - BlockManager BlockManagerId(driver, 172.17.0.2, 38171, None) re-registering with master
+ INFO [2020-10-03 07:01:18,463] ({driver-heartbeater} Logging.scala[logInfo]:54) - Registering BlockManager BlockManagerId(driver, 172.17.0.2, 38171, None)
+ INFO [2020-10-03 07:01:18,486] ({driver-heartbeater} Logging.scala[logInfo]:54) - Registered BlockManager BlockManagerId(driver, 172.17.0.2, 38171, None)
+ INFO [2020-10-03 07:01:18,496] ({driver-heartbeater} Logging.scala[logInfo]:54) - Reporting 10 blocks to the master.
+ INFO [2020-10-03 07:01:18,611] ({dispatcher-event-loop-0} Logging.scala[logInfo]:54) - Updated broadcast_4_piece0 in memory on 172.17.0.2:38171 (current size: 24.2 KB, original size: 24.2 KB, free: 408.8 MB)
+ INFO [2020-10-03 07:01:18,804] ({dispatcher-event-loop-1} Logging.scala[logInfo]:54) - Updated broadcast_3_piece0 in memory on 172.17.0.2:38171 (current size: 7.0 KB, original size: 7.0 KB, free: 408.8 MB)
+ INFO [2020-10-03 07:01:18,831] ({dispatcher-event-loop-0} Logging.scala[logInfo]:54) - Updated broadcast_7_piece0 in memory on 172.17.0.2:38171 (current size: 7.2 KB, original size: 7.2 KB, free: 408.8 MB)
+ INFO [2020-10-03 07:01:18,867] ({dispatcher-event-loop-1} Logging.scala[logInfo]:54) - Updated broadcast_2_piece0 in memory on 172.17.0.2:38171 (current size: 24.2 KB, original size: 24.2 KB, free: 408.8 MB)
+ INFO [2020-10-03 07:01:18,886] ({dispatcher-event-loop-0} Logging.scala[logInfo]:54) - Updated broadcast_6_piece0 in memory on 172.17.0.2:38171 (current size: 24.2 KB, original size: 24.2 KB, free: 408.8 MB)

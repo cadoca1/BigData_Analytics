@@ -1,0 +1,21 @@
+ INFO [2020-10-06 18:01:12,247] ({main} RemoteInterpreterServer.java[main]:261) - URL:jar:file:/zeppelin/lib/interpreter/zeppelin-interpreter-0.8.1.jar!/org/apache/zeppelin/interpreter/remote/RemoteInterpreterServer.class
+ INFO [2020-10-06 18:01:12,561] ({main} RemoteInterpreterServer.java[<init>]:162) - Launching ThriftServer at 172.17.0.2:42341
+ INFO [2020-10-06 18:01:12,601] ({main} RemoteInterpreterServer.java[<init>]:166) - Starting remote interpreter server on port 42341
+ INFO [2020-10-06 18:01:12,617] ({Thread-0} RemoteInterpreterServer.java[run]:203) - Starting remote interpreter server on port 42341
+ INFO [2020-10-06 18:01:13,662] ({Thread-1} RemoteInterpreterUtils.java[registerInterpreter]:165) - callbackHost: 172.17.0.2, callbackPort: 37671, callbackInfo: CallbackInfo(host:172.17.0.2, port:42341)
+ INFO [2020-10-06 18:01:14,677] ({pool-1-thread-1} RemoteInterpreterServer.java[createInterpreter]:311) - Instantiate interpreter org.apache.zeppelin.markdown.Markdown
+ WARN [2020-10-06 18:01:15,129] ({pool-1-thread-1} ZeppelinConfiguration.java[create]:117) - Failed to load configuration, proceeding with a default
+ INFO [2020-10-06 18:01:15,239] ({pool-1-thread-1} ZeppelinConfiguration.java[create]:129) - Server Host: 0.0.0.0
+ INFO [2020-10-06 18:01:15,243] ({pool-1-thread-1} ZeppelinConfiguration.java[create]:131) - Server Port: 8080
+ INFO [2020-10-06 18:01:15,245] ({pool-1-thread-1} ZeppelinConfiguration.java[create]:135) - Context Path: /
+ INFO [2020-10-06 18:01:15,263] ({pool-1-thread-1} ZeppelinConfiguration.java[create]:136) - Zeppelin Version: 0.8.1
+ INFO [2020-10-06 18:01:15,266] ({pool-1-thread-1} SchedulerFactory.java[<init>]:59) - Scheduler Thread Pool Size: 100
+ INFO [2020-10-06 18:01:15,303] ({pool-2-thread-2} SchedulerFactory.java[jobStarted]:114) - Job 20200212-211017_427079505 started by scheduler org.apache.zeppelin.markdown.Markdown761207470
+ INFO [2020-10-06 18:01:17,406] ({pool-2-thread-2} SchedulerFactory.java[jobFinished]:120) - Job 20200212-211017_427079505 finished by scheduler org.apache.zeppelin.markdown.Markdown761207470
+ INFO [2020-10-06 18:01:18,820] ({pool-2-thread-2} SchedulerFactory.java[jobStarted]:114) - Job 20200212-211209_383425838 started by scheduler org.apache.zeppelin.markdown.Markdown761207470
+ INFO [2020-10-06 18:01:19,245] ({pool-2-thread-2} SchedulerFactory.java[jobFinished]:120) - Job 20200212-211209_383425838 finished by scheduler org.apache.zeppelin.markdown.Markdown761207470
+ INFO [2020-10-06 18:05:07,899] ({pool-2-thread-3} SchedulerFactory.java[jobStarted]:114) - Job 20200212-211017_427079505 started by scheduler org.apache.zeppelin.markdown.Markdown761207470
+ INFO [2020-10-06 18:05:07,915] ({pool-2-thread-3} SchedulerFactory.java[jobFinished]:120) - Job 20200212-211017_427079505 finished by scheduler org.apache.zeppelin.markdown.Markdown761207470
+ INFO [2020-10-06 18:05:08,440] ({pool-2-thread-2} SchedulerFactory.java[jobStarted]:114) - Job 20200212-211209_383425838 started by scheduler org.apache.zeppelin.markdown.Markdown761207470
+ INFO [2020-10-06 18:05:08,641] ({pool-2-thread-2} SchedulerFactory.java[jobFinished]:120) - Job 20200212-211209_383425838 finished by scheduler org.apache.zeppelin.markdown.Markdown761207470
+ INFO [2020-10-06 18:06:39,056] ({pool-1-thread-1} RemoteInterpreterServer.java[shutdown]:209) - Shutting down...

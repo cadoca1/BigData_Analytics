@@ -1,0 +1,48 @@
+ INFO [2020-10-02 18:02:45,381] ({main} RemoteInterpreterServer.java[main]:261) - URL:jar:file:/zeppelin/lib/interpreter/zeppelin-interpreter-0.8.1.jar!/org/apache/zeppelin/interpreter/remote/RemoteInterpreterServer.class
+ INFO [2020-10-02 18:02:45,740] ({main} RemoteInterpreterServer.java[<init>]:162) - Launching ThriftServer at 172.17.0.2:42059
+ INFO [2020-10-02 18:02:45,788] ({main} RemoteInterpreterServer.java[<init>]:166) - Starting remote interpreter server on port 42059
+ INFO [2020-10-02 18:02:45,803] ({Thread-0} RemoteInterpreterServer.java[run]:203) - Starting remote interpreter server on port 42059
+ INFO [2020-10-02 18:02:46,864] ({Thread-1} RemoteInterpreterUtils.java[registerInterpreter]:165) - callbackHost: 172.17.0.2, callbackPort: 46797, callbackInfo: CallbackInfo(host:172.17.0.2, port:42059)
+ INFO [2020-10-02 18:02:47,929] ({pool-1-thread-1} RemoteInterpreterServer.java[createInterpreter]:311) - Instantiate interpreter org.apache.zeppelin.markdown.Markdown
+ WARN [2020-10-02 18:02:48,311] ({pool-1-thread-1} ZeppelinConfiguration.java[create]:117) - Failed to load configuration, proceeding with a default
+ INFO [2020-10-02 18:02:48,482] ({pool-1-thread-1} ZeppelinConfiguration.java[create]:129) - Server Host: 0.0.0.0
+ INFO [2020-10-02 18:02:48,484] ({pool-1-thread-1} ZeppelinConfiguration.java[create]:131) - Server Port: 8080
+ INFO [2020-10-02 18:02:48,486] ({pool-1-thread-1} ZeppelinConfiguration.java[create]:135) - Context Path: /
+ INFO [2020-10-02 18:02:48,505] ({pool-1-thread-1} ZeppelinConfiguration.java[create]:136) - Zeppelin Version: 0.8.1
+ INFO [2020-10-02 18:02:48,508] ({pool-1-thread-1} SchedulerFactory.java[<init>]:59) - Scheduler Thread Pool Size: 100
+ INFO [2020-10-02 18:02:48,545] ({pool-2-thread-2} SchedulerFactory.java[jobStarted]:114) - Job 20200212-205826_70774014 started by scheduler org.apache.zeppelin.markdown.Markdown721500824
+ INFO [2020-10-02 18:02:51,169] ({pool-2-thread-2} SchedulerFactory.java[jobFinished]:120) - Job 20200212-205826_70774014 finished by scheduler org.apache.zeppelin.markdown.Markdown721500824
+ INFO [2020-10-02 18:02:51,795] ({pool-2-thread-2} SchedulerFactory.java[jobStarted]:114) - Job 20200212-205822_107015314 started by scheduler org.apache.zeppelin.markdown.Markdown721500824
+ INFO [2020-10-02 18:02:51,840] ({pool-2-thread-2} SchedulerFactory.java[jobFinished]:120) - Job 20200212-205822_107015314 finished by scheduler org.apache.zeppelin.markdown.Markdown721500824
+ INFO [2020-10-02 18:02:52,280] ({pool-2-thread-3} SchedulerFactory.java[jobStarted]:114) - Job 20200212-205958_2114216815 started by scheduler org.apache.zeppelin.markdown.Markdown721500824
+ INFO [2020-10-02 18:02:52,314] ({pool-2-thread-3} SchedulerFactory.java[jobFinished]:120) - Job 20200212-205958_2114216815 finished by scheduler org.apache.zeppelin.markdown.Markdown721500824
+ INFO [2020-10-02 18:02:52,606] ({pool-2-thread-2} SchedulerFactory.java[jobStarted]:114) - Job 20200212-210103_635473375 started by scheduler org.apache.zeppelin.markdown.Markdown721500824
+ INFO [2020-10-02 18:02:52,631] ({pool-2-thread-2} SchedulerFactory.java[jobFinished]:120) - Job 20200212-210103_635473375 finished by scheduler org.apache.zeppelin.markdown.Markdown721500824
+ INFO [2020-10-02 18:02:52,969] ({pool-2-thread-4} SchedulerFactory.java[jobStarted]:114) - Job 20200212-210130_1517377917 started by scheduler org.apache.zeppelin.markdown.Markdown721500824
+ INFO [2020-10-02 18:02:53,001] ({pool-2-thread-4} SchedulerFactory.java[jobFinished]:120) - Job 20200212-210130_1517377917 finished by scheduler org.apache.zeppelin.markdown.Markdown721500824
+ INFO [2020-10-02 18:02:53,349] ({pool-2-thread-3} SchedulerFactory.java[jobStarted]:114) - Job 20200212-210142_2137728278 started by scheduler org.apache.zeppelin.markdown.Markdown721500824
+ INFO [2020-10-02 18:02:53,522] ({pool-2-thread-3} SchedulerFactory.java[jobFinished]:120) - Job 20200212-210142_2137728278 finished by scheduler org.apache.zeppelin.markdown.Markdown721500824
+ INFO [2020-10-02 18:02:54,051] ({pool-2-thread-5} SchedulerFactory.java[jobStarted]:114) - Job 20200212-210207_241302479 started by scheduler org.apache.zeppelin.markdown.Markdown721500824
+ INFO [2020-10-02 18:02:54,075] ({pool-2-thread-5} SchedulerFactory.java[jobFinished]:120) - Job 20200212-210207_241302479 finished by scheduler org.apache.zeppelin.markdown.Markdown721500824
+ INFO [2020-10-02 18:02:54,426] ({pool-2-thread-2} SchedulerFactory.java[jobStarted]:114) - Job 20200212-210359_925127627 started by scheduler org.apache.zeppelin.markdown.Markdown721500824
+ INFO [2020-10-02 18:02:54,439] ({pool-2-thread-2} SchedulerFactory.java[jobFinished]:120) - Job 20200212-210359_925127627 finished by scheduler org.apache.zeppelin.markdown.Markdown721500824
+ INFO [2020-10-02 18:02:54,773] ({pool-2-thread-6} SchedulerFactory.java[jobStarted]:114) - Job 20200212-205926_7967864 started by scheduler org.apache.zeppelin.markdown.Markdown721500824
+ INFO [2020-10-02 18:02:54,795] ({pool-2-thread-6} SchedulerFactory.java[jobFinished]:120) - Job 20200212-205926_7967864 finished by scheduler org.apache.zeppelin.markdown.Markdown721500824
+ INFO [2020-10-02 18:31:11,718] ({pool-2-thread-4} SchedulerFactory.java[jobStarted]:114) - Job 20200212-211017_427079505 started by scheduler org.apache.zeppelin.markdown.Markdown721500824
+ INFO [2020-10-02 18:31:11,756] ({pool-2-thread-4} SchedulerFactory.java[jobFinished]:120) - Job 20200212-211017_427079505 finished by scheduler org.apache.zeppelin.markdown.Markdown721500824
+ INFO [2020-10-02 18:31:12,471] ({pool-2-thread-7} SchedulerFactory.java[jobStarted]:114) - Job 20200212-211209_383425838 started by scheduler org.apache.zeppelin.markdown.Markdown721500824
+ INFO [2020-10-02 18:31:12,807] ({pool-2-thread-7} SchedulerFactory.java[jobFinished]:120) - Job 20200212-211209_383425838 finished by scheduler org.apache.zeppelin.markdown.Markdown721500824
+ INFO [2020-10-02 18:34:41,336] ({pool-2-thread-3} SchedulerFactory.java[jobStarted]:114) - Job 20200212-211017_427079505 started by scheduler org.apache.zeppelin.markdown.Markdown721500824
+ INFO [2020-10-02 18:34:41,354] ({pool-2-thread-3} SchedulerFactory.java[jobFinished]:120) - Job 20200212-211017_427079505 finished by scheduler org.apache.zeppelin.markdown.Markdown721500824
+ INFO [2020-10-02 18:34:41,914] ({pool-2-thread-8} SchedulerFactory.java[jobStarted]:114) - Job 20200212-211209_383425838 started by scheduler org.apache.zeppelin.markdown.Markdown721500824
+ INFO [2020-10-02 18:34:42,030] ({pool-2-thread-8} SchedulerFactory.java[jobFinished]:120) - Job 20200212-211209_383425838 finished by scheduler org.apache.zeppelin.markdown.Markdown721500824
+ INFO [2020-10-02 18:35:31,374] ({pool-2-thread-5} SchedulerFactory.java[jobStarted]:114) - Job 20200212-211017_427079505 started by scheduler org.apache.zeppelin.markdown.Markdown721500824
+ INFO [2020-10-02 18:35:31,385] ({pool-2-thread-5} SchedulerFactory.java[jobFinished]:120) - Job 20200212-211017_427079505 finished by scheduler org.apache.zeppelin.markdown.Markdown721500824
+ INFO [2020-10-02 18:35:31,804] ({pool-2-thread-9} SchedulerFactory.java[jobStarted]:114) - Job 20200212-211209_383425838 started by scheduler org.apache.zeppelin.markdown.Markdown721500824
+ INFO [2020-10-02 18:35:31,973] ({pool-2-thread-9} SchedulerFactory.java[jobFinished]:120) - Job 20200212-211209_383425838 finished by scheduler org.apache.zeppelin.markdown.Markdown721500824
+ INFO [2020-10-02 18:35:36,208] ({pool-2-thread-2} SchedulerFactory.java[jobStarted]:114) - Job 20200212-211017_427079505 started by scheduler org.apache.zeppelin.markdown.Markdown721500824
+ INFO [2020-10-02 18:35:36,234] ({pool-2-thread-2} SchedulerFactory.java[jobFinished]:120) - Job 20200212-211017_427079505 finished by scheduler org.apache.zeppelin.markdown.Markdown721500824
+ INFO [2020-10-02 18:51:11,670] ({pool-2-thread-18} SchedulerFactory.java[jobStarted]:114) - Job 20200212-211017_427079505 started by scheduler org.apache.zeppelin.markdown.Markdown721500824
+ INFO [2020-10-02 18:51:11,736] ({pool-2-thread-18} SchedulerFactory.java[jobFinished]:120) - Job 20200212-211017_427079505 finished by scheduler org.apache.zeppelin.markdown.Markdown721500824
+ INFO [2020-10-02 18:51:12,034] ({pool-2-thread-19} SchedulerFactory.java[jobStarted]:114) - Job 20200212-211209_383425838 started by scheduler org.apache.zeppelin.markdown.Markdown721500824
+ INFO [2020-10-02 18:51:12,107] ({pool-2-thread-19} SchedulerFactory.java[jobFinished]:120) - Job 20200212-211209_383425838 finished by scheduler org.apache.zeppelin.markdown.Markdown721500824
